@@ -48,24 +48,24 @@ The analysis is based on a dataset containing customer information including:
 ## Key Visualizations
 
 ### Income Distribution by Product
-![Income Distribution](https://raw.githubusercontent.com/amitguptaforwork/dataanalytics_portfolio_projects/main/CaseStudyAerofit-Exploring%20Descriptive%20Statistics%20and%20Probability/images/income_distribution.png)
+![Income Distribution](images/income_distribution.png)
 
 *This visualization shows the income distribution across different treadmill products, highlighting that higher-income customers tend to purchase the premium KP781 model.*
 
 ### Age Distribution by Product
-![Age Distribution](https://raw.githubusercontent.com/amitguptaforwork/dataanalytics_portfolio_projects/main/CaseStudyAerofit-Exploring%20Descriptive%20Statistics%20and%20Probability/images/age_distribution.png)
+![Age Distribution](images/age_distribution.png)
 
 *This analysis demonstrates the age distribution for each treadmill model, showing that younger customers typically prefer the KP281 model while older customers lean toward the KP781 model.*
 
 ### Correlation Heatmap
-![Correlation Heatmap](https://raw.githubusercontent.com/amitguptaforwork/dataanalytics_portfolio_projects/main/CaseStudyAerofit-Exploring%20Descriptive%20Statistics%20and%20Probability/images/correlation_heatmap.png)
+![Correlation Heatmap](images/correlation_heatmap.png)
 
 *The correlation heatmap reveals relationships between variables, with strong positive correlations between income, fitness level, and preference for premium models.*
 
 ### Product Distribution by Education Level
-![Product by Education Level](https://raw.githubusercontent.com/amitguptaforwork/dataanalytics_portfolio_projects/main/CaseStudyAerofit-Exploring%20Descriptive%20Statistics%20and%20Probability/images/education_product.png.png)
+![Product by Education Level](images/education_product.png)
 
-*This visualization demonstrates how gender and marital status affect product selection, providing insights for targeted marketing.*
+*This visualization demonstrates how education level affect product selection, providing insights for targeted marketing.*
 
 ## Key Findings
 
@@ -96,6 +96,10 @@ The analysis is based on a dataset containing customer information including:
 4. **Distribution Strategy**:
    - Focus premium models in high-income geographic areas
    - Position entry-level models in areas with younger demographics
+
+
+![Business Insight Grid](images/business_insights.png)
+*This single image sums up interplay of all variables that was uncovered in this study.*
 
 ## Technical Implementation
 
