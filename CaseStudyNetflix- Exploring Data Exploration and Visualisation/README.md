@@ -125,6 +125,9 @@ The analysis uses Netflix's content library dataset containing information about
 
 ## Business Recommendations
 
+
+[See full report here](https://github.com/amitguptaforwork/dataanalytics_portfolio_projects/blob/main/CaseStudyNetflix-%20Exploring%20Data%20Exploration%20and%20Visualisation/4.NetflixFinalReportSubmission.pdf)
+
 1. **Content Strategy**:
    - Continue investing in TV Show development to build subscriber loyalty
    - Maintain balance between new releases and quality vintage content
