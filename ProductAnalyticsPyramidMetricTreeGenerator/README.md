@@ -38,14 +38,17 @@ Level 1 (L1) or primary metrics should either directly contribute to the focus m
 
 The primary metric can be more valuable than the NSM in the short-term because of its narrower focus, tighter feedback loop and more immediate association with the specific product, team, or initiative in question.
 
+<span style="color:orange">
 For example, if a product’s focus metric is Weekly active user, a good L1 metric would be 7-day retention to ensure you aren’t spending precious marketing funds to acquire new users who leave after a day or two.
+</span>
 
-
-Supporting/ Tracking/ Input metric / Level 2 metric -
+### Supporting/ Tracking/ Input metric / Level 2 metric -
 
 Performance indicators which are set for the current initiatives that are most granular and mostly used for tracking the progress at lowest level. 
 
+<span style="color:orange">
 For example - There may be some targeted marketing or segmented offers that need to be checked.
+</span>
 
 Supporting metrics are indicators that the primary metric is moving in the right direction.
 
@@ -459,13 +462,374 @@ fig.savefig('kpi_tree.svg', bbox_inches='tight')
 - Use vector formats (PDF, SVG) for scalable output
 - Consider Mermaid for documentation that needs frequent updates
 
+<br/>
+<br/>
+
+
+# Industry KPIs Reference Guide
+
+A comprehensive reference of Key Performance Indicators (KPIs) across various industries and business models. This guide provides top-level metrics that companies typically use to measure their success and can serve as input for KPI tree generation tools.
+
+## Table of Contents
+
+- [Technology & Software](#technology--software)
+- [Retail & E-Commerce](#retail--e-commerce)
+- [Finance & Banking](#finance--banking)
+- [Travel & Hospitality](#travel--hospitality)
+- [Healthcare & Wellness](#healthcare--wellness)
+- [Entertainment & Media](#entertainment--media)
+- [Education & Learning](#education--learning)
+- [Transportation & Logistics](#transportation--logistics)
+- [Food & Beverage](#food--beverage)
+- [Real Estate & Property](#real-estate--property)
+- [Consumer & Lifestyle](#consumer--lifestyle)
+- [Manufacturing & Industrial](#manufacturing--industrial)
+- [Sustainability & Environment](#sustainability--environment)
+- [Miscellaneous & Emerging Industries](#miscellaneous--emerging-industries)
+- [Social Impact & Nonprofits](#social-impact--nonprofits)
+
+---
+
+## Technology & Software
+
+1. **Social Media Platform** – Daily Active Users (DAUs)
+2. **Search Engine** – Number of Searches Conducted
+3. **SaaS Subscription Business** – Monthly Recurring Revenue (MRR)
+4. **Cloud Computing Service** – Server Utilization Rate
+5. **E-commerce Platform** – Gross Merchandise Volume (GMV)
+6. **Cybersecurity Firm** – Number of Threats Blocked per Day
+7. **AI Research Company** – Successful Model Deployments
+8. **Web Hosting Provider** – Server Uptime %
+9. **Augmented Reality (AR) Platform** – AR Sessions per User
+10. **Virtual Reality (VR) Gaming** – Total Time Spent in VR
+11. **No-Code Development Platform** – Number of Apps Built
+12. **Mobile App Store** (Google Play, App Store) – App Downloads per User
+13. **Data Analytics SaaS** – Reports Generated per User
+14. **IT Consulting Firm** – Client Retention Rate
+15. **Software Testing Company** – Bugs Identified & Resolved
+
+---
+
+## Retail & E-Commerce
+
+1. **Online Marketplace** (Amazon, Flipkart) – Total Sales Volume (GMV)
+2. **Grocery Store** – Average Basket Size (Total Spend per Visit)
+3. **Luxury Brand** – Customer Lifetime Value (CLV)
+4. **Fashion Retailer** – Average Order Value (AOV)
+5. **Subscription Box Service** – Retention Rate
+6. **DTC (Direct-to-Consumer) Brand** – Repeat Purchases per Customer
+7. **Secondhand Marketplace** (eBay, Poshmark) – Transactions per Seller
+8. **Wholesale Distributor** – Average Order Value (AOV)
+9. **Boutique Clothing Store** – Customer Retention Rate
+10. **Handmade Goods Marketplace** (Etsy) – Total Artisan Sales
+11. **Furniture Retailer** – Delivery Timeliness
+12. **Consumer Electronics Store** – Product Upgrade Rate
+13. **Department Store Chain** – Foot Traffic per Store
+14. **Beauty & Skincare Brand** – Subscription Refill Rate
+15. **Jewelry Store** – Average Revenue per Sale
+
+---
+
+## Finance & Banking
+
+1. **Banking App** – Number of Active Accounts
+2. **Credit Card Company** – Transaction Volume per Customer
+3. **Investment Platform** – Assets Under Management (AUM)
+4. **Insurance Company** – Policy Renewal Rate
+5. **Fintech Startup** – Number of Transactions Processed
+6. **Crypto Exchange Platform** – Daily Trading Volume
+7. **Peer-to-Peer Lending Platform** – Loan Completion Rate
+8. **Microfinance Institution** – Loan Repayment Rate
+9. **Mobile Payment App** (PayPal, PhonePe) – Transactions per User
+10. **Stock Brokerage Firm** – Number of Trades per Customer
+11. **Digital Bank** – Active Monthly Users
+12. **Personal Finance App** – Budget Completion Rate
+13. **Corporate Lending Business** – Loan Conversion Rate
+14. **ATM Service Provider** – Successful Withdrawals per Machine
+15. **Fraud Prevention Company** – Fraud Cases Prevented
+
+---
+
+## Travel & Hospitality
+
+1. **Online Travel Agency** (Expedia, MakeMyTrip) – Number of Booked Nights
+2. **Hotel Chain** – Revenue per Available Room (RevPAR)
+3. **Airline Company** – Load Factor (% of Seats Filled per Flight)
+4. **Car Rental Service** – Utilization Rate (Vehicles Rented per Day)
+5. **Vacation Rental Platform** (Airbnb) – Nights Booked per User
+6. **Luxury Hotel Chain** – Customer Satisfaction Score
+7. **Budget Hostel Service** – Occupancy Rate
+8. **Cruise Line** – Average Cruise Duration
+9. **Online Ticketing Platform** (RedBus, Booking.com) – Seats Sold per Trip
+10. **Business Travel Management Company** – Corporate Retention Rate
+11. **Glamping & Eco-Resorts** – Average Booking Duration
+12. **Railway Ticketing Platform** – Number of Train Seat Bookings
+13. **City Tour Agency** – Number of Tours Sold
+14. **Long-Term Stay Housing Platform** – Average Stay Length
+15. **Road Trip Rental Business** – Miles Driven per Customer
+
+---
+
+## Healthcare & Wellness
+
+1. **Pharmacy Chain** – Prescription Refill Rate
+2. **Health Insurance Provider** – Member Retention Rate
+3. **Hospital System** – Bed Occupancy Rate
+4. **Telemedicine Service** – Number of Consultations
+5. **Fitness App** – Monthly Active Users (MAU)
+6. **Mental Health Platform** – Sessions Completed per User
+7. **Diet & Nutrition Coaching Service** – Weight Loss Success Rate
+8. **Rehabilitation Center** – Patient Recovery Rate
+9. **Dental Clinic Chain** – Appointment Completion Rate
+10. **Health & Wellness Retreats** – Return Booking Rate
+11. **Wearable Health Tech** (Fitbit, Apple Watch) – Active User Engagement
+12. **Home Healthcare Provider** – Visits per Patient
+13. **Personal Trainer Business** – Workout Adherence Rate
+14. **Wellness Supplements Brand** – Subscription Retention Rate
+15. **Hearing Aid & Vision Correction Services** – Product Adoption Rate
+
+---
+
+## Entertainment & Media
+
+1. **Streaming Service** (Netflix, Spotify) – Hours of Content Consumed
+2. **Gaming Platform** – Monthly Active Players (MAP)
+3. **News Website** – Time Spent per Session
+4. **Podcast Platform** – Total Listening Hours
+5. **Movie Theatre Chain** – Seats Sold per Screening
+6. **TV Network** – Total Hours Watched per Viewer
+7. **Live Streaming Platform** (Twitch, YouTube Live) – Average Watch Time per Stream
+8. **Film Production Studio** – Box Office Revenue per Release
+9. **Live Concert Business** – Ticket Sales per Event
+10. **Online Magazine Subscription** – Reader Retention Rate
+11. **Ad-Supported News Website** – Click-Through Rate on Ads
+12. **Book Publishing Company** – Book Sales per Author
+13. **Comic Book Platform** – Chapters Read per User
+14. **Music Record Label** – Streaming Royalties per Artist
+15. **Esports Organization** – Viewership per Tournament
+
+---
+
+## Education & Learning
+
+1. **Online Learning Platform** (Coursera, Udemy) – Course Completion Rate
+2. **University** – Student Graduation Rate
+3. **Language Learning App** – Daily Active Learners
+4. **Tutoring Service** – Student Retention Rate
+5. **Corporate Training Business** – Engagement Rate (Lessons Completed)
+6. **Private Tutoring Business** – Student Success Rate
+7. **Online Certification Provider** – Certifications Earned per User
+8. **K-12 Learning App** – Homework Completion Rate
+9. **Skill-Based Training Platform** – Lessons Completed per User
+10. **Test Preparation Company** – Exam Score Improvement Rate
+11. **Coding Bootcamp** – Job Placement Rate
+12. **University Alumni Organization** – Alumni Engagement Index
+13. **EdTech SaaS** (School Management Software) – Adoption Rate by Institutions
+14. **Corporate Learning Platform** – Employee Course Completion Rate
+15. **Student Loan Refinancing Service** – Loan Repayment Success
+
+---
+
+## Transportation & Logistics
+
+1. **Rideshare App** (Uber, Ola) – Completed Rides per Driver
+2. **Public Transit System** – Passenger Utilization Rate
+3. **Freight & Logistics Company** – On-time Delivery Rate
+4. **Courier Delivery Service** – Parcels Delivered per Day
+5. **Electric Scooter Rental** – Number of Rides per Vehicle per Day
+6. **Bike-Sharing Service** – Daily Active Riders
+7. **Hyperloop/High-Speed Rail Project** – Passenger Throughput
+8. **Airport Management Company** – Passenger Satisfaction Score
+9. **Shipping Container Business** – Cargo Utilization Rate
+10. **Truck Fleet Logistics Service** – Fuel Efficiency per Mile
+11. **Drone Delivery Service** – Successful Deliveries per Route
+12. **Rental Car Subscription Business** – Fleet Utilization per City
+13. **EV Charging Station Network** – Charging Sessions per Station
+14. **Luxury Chauffeur Service** – Ride Completion Rate
+15. **Long-Distance Bus Operator** – Seat Occupancy Rate
+
+---
+
+## Food & Beverage
+
+1. **Restaurant Chain** – Revenue per Table Turn
+2. **Coffee Shop** – Average Ticket Size (Spend per Customer)
+3. **Meal Kit Subscription** – Subscription Retention Rate
+4. **Food Delivery App** – Orders per Active User
+5. **Fast Food Franchise** – Repeat Customer Visits per Month
+6. **Organic Food Retailer** – Returning Customer Rate
+7. **Farm-to-Table Restaurant** – Customer Satisfaction Score
+8. **Online Recipe Platform** – Recipe Completion Rate
+9. **Meal Planning App** – Ingredients Purchased per Plan
+10. **Food Processing Company** – Supply Chain Efficiency Score
+11. **Craft Brewery** – Taproom Foot Traffic per Month
+12. **Alcohol Subscription Service** – Retention Rate of Members
+13. **Convenience Store Chain** – Basket Size Growth
+14. **Frozen Food Brand** – Total SKUs Sold per Month
+15. **Snack Subscription Box** – Engagement Rate
+
+---
+
+## Real Estate & Property
+
+1. **Real Estate Marketplace** – Property Listings Viewed per User
+2. **Property Management Firm** – Occupancy Rate
+3. **Co-Working Space** – Desk Utilization Rate
+4. **Home Rental Platform** – Monthly Rental Volume
+5. **Construction Firm** – Project Completion Rate
+6. **Commercial Property Management** – Occupancy Growth Rate
+7. **Smart Home Tech Provider** – Devices Activated per Household
+8. **Office Space Leasing Service** – Lease Renewal Rate
+9. **Affordable Housing Developer** – Units Sold per Year
+10. **Senior Living Community** – Resident Retention Rate
+11. **Vacation Property Investment** – Revenue per Rental Night
+12. **Real Estate Agent Marketplace** – Leads Converted per Agent
+13. **Student Housing Platform** – Average Rental Period per Tenant
+14. **Interior Design Consultancy** – Project Completion Satisfaction Rate
+15. **Home Improvement Service** – Repeat Customer Engagement
+
+---
+
+## Consumer & Lifestyle
+
+1. **Luxury Car Dealership** – Repeat Customer Purchase Cycle
+2. **Premium Watch Brand** – Referral Rate per Buyer
+3. **Eyewear Subscription** – Glasses Renewed per Subscriber
+4. **Personal Finance Coaching Service** – Savings Growth Rate per User
+5. **Wedding Planning Service** – Vendor Satisfaction Score
+6. **Pet Insurance Company** – Policy Renewal Rate
+7. **Online Personal Styling Platform** – User Engagement per Session
+8. **Subscription-Based Laundry Service** – Monthly Utilization Rate
+9. **Gift Shopping & Registry Platform** – Order Conversion Rate
+10. **Custom Print-on-Demand Merchandise** – Total Items Sold
+
+---
+
+## Manufacturing & Industrial
+
+1. **Automobile Manufacturer** – Production Efficiency per Factory
+2. **Aerospace Equipment Supplier** – Parts Reliability Score
+3. **Heavy Machinery Producer** – Equipment Lifespan per Unit
+4. **Solar Panel Manufacturer** – Installed Capacity Growth Rate
+5. **Battery Tech Innovator** – Energy Density Efficiency Progress
+6. **Consumer Electronics Company** – Device Upgrade Retention Rate
+7. **Medical Equipment Manufacturer** – Compliance Certification Completion
+8. **Chemical Production Business** – Safety Compliance Score
+9. **Smart Factory Automation** – Reduction in Manual Labor Time
+10. **Textile Mill** – Fabric Production Output per Day
+
+---
+
+## Sustainability & Environment
+
+1. **Waste Recycling Service** – Tons of Waste Diverted from Landfills
+2. **Sustainable Fashion Brand** – Eco-Friendly Materials Usage Rate
+3. **Electric Vehicle Manufacturer** – EV Adoption Growth Rate
+4. **Green Energy Provider** (Solar/Wind) – Gigawatts of Clean Energy Produced
+5. **Carbon Offset Marketplace** – Verified CO2 Offset per Customer
+6. **Water Purification System Provider** – Households Served with Clean Water
+7. **Eco-Friendly Packaging Company** – Reduction in Plastic Waste per Unit
+8. **Smart Agriculture Business** – Yield Efficiency per Hectare
+9. **Ocean Cleanup Initiative** – Volume of Plastic Removed per Year
+10. **Renewable Energy Storage Company** – Battery Efficiency Improvement Rate
+
+---
+
+## Miscellaneous & Emerging Industries
+
+1. **NFT Marketplace** – Volume of NFTs Traded per Week
+2. **Metaverse Real Estate Developer** – Virtual Land Sales Volume
+3. **AI Personal Assistant App** – User Satisfaction Score
+4. **Quantum Computing Startup** – Stable Qubit Retention Rate
+5. **Autonomous Robotics Manufacturer** – Operational Success per Deployment
+6. **Cryonics & Longevity Research** – Viability Rate of Human Preservation
+7. **Space Tourism Company** – Successful Flights per Year
+8. **Vertical Farming Business** – Yield per Vertical Acre
+9. **3D Printed Housing Firm** – Construction Time Reduction per Home
+10. **Blockchain-Based Identity Verification** – Fraud Prevention Success Rate
+
+---
+
+## Social Impact & Nonprofits
+
+1. **Nonprofit Fundraising Platform** – Donation Growth Rate
+2. **Microfinance for Developing Countries** – Business Sustainability Rate
+3. **Online Charity Crowdfunding** – Donor Retention Rate
+4. **Educational Equality Foundation** – Number of Students Sponsored
+5. **Affordable Medicine Initiative** – Life-Saving Treatment Access Rate
+6. **Wildlife Conservation Organization** – Protected Species Population Growth
+7. **Disaster Relief Logistics Provider** – Aid Delivery Speed per Crisis
+8. **Diversity & Inclusion Consultancy** – Workplace Equity Score
+9. **Public Health Awareness Program** – Campaign Reach Metrics
+10. **Human Rights Advocacy Group** – Policy Change Effectiveness
+
+---
+
+## How to Use This Reference
+
+### For KPI Tree Generation
+Each entry in this reference can serve as the top-level KPI for your KPI tree generator. For example:
+
+```python
+streaming_service_kpi = {
+    'top_kpi': {
+        'name': 'CONTENT ENGAGEMENT',
+        'description': 'Hours of Content Consumed'
+    },
+    'categories': [
+        {
+            'name': 'CONTENT ACQUISITION',
+            'team': 'Content',
+            'metric': 'New titles added per month',
+            'subcategories': [
+                {'name': 'Original content', 'type': 'action'},
+                {'name': 'Licensed content', 'type': 'normal'}
+            ]
+        },
+        {
+            'name': 'USER ENGAGEMENT',
+            'team': 'Product',
+            'metric': 'Average watch time per user',
+            'subcategories': [
+                {'name': 'Completion rate', 'type': 'action'},
+                {'name': 'Binge sessions', 'type': 'normal'}
+            ]
+        }
+    ]
+}
+```
+
+### Industry Insights
+- **Technology & Software**: Focus on user engagement, retention, and scalability metrics
+- **Retail & E-Commerce**: Emphasize transaction volume, customer lifetime value, and conversion rates
+- **Finance & Banking**: Prioritize security, compliance, and transaction efficiency
+- **Healthcare**: Balance patient outcomes with operational efficiency
+- **Entertainment**: Measure engagement depth and content consumption patterns
+
+### Choosing the Right KPI
+When selecting a top-level KPI for your organization:
+
+1. **Alignment**: Ensure it aligns with your business model and strategic goals
+2. **Actionability**: Choose metrics that can be influenced by your team's actions
+3. **Measurability**: Select KPIs with reliable data sources and clear definitions
+4. **Relevance**: Pick metrics that matter to your stakeholders and customers
+5. **Balance**: Consider leading vs. lagging indicators
+
+---
+
 ## Contributing
 
-Feel free to contribute improvements:
-- Additional styling options
-- New export formats
-- Layout algorithms
-- Template presets for common industries
+This reference is continuously evolving. To contribute:
+
+1. **Add New Industries**: Suggest additional industry categories
+2. **Update KPIs**: Propose more relevant metrics for existing industries
+3. **Industry Insights**: Share best practices for specific sectors
+4. **Use Cases**: Provide real-world examples of KPI implementations
+
+
+
+
+
 
 ## License
 
