@@ -15,6 +15,9 @@ In order to get their head around with so many possible metrics, companies usual
 
 ![Product Metric Pyramid](images/pyramid.png)
 
+*Image Credit: [Scaler](https://scaler.com)*
+
+
 ### Focus metric / North Star metric 
 
 This is the single most important measure of success that matters a lot to a company. 
@@ -29,6 +32,7 @@ A North Star Metric (NSM) should be:
 Which metric, if it were to increase today, would most accelerate my business’ flywheel?
 ![North Star examples](images/northstar.png)
 
+*Image Credit: [Scaler](https://scaler.com)*
 ## See 200+ Examples of North Star metrics across a variety of industries
 
 - [Technology & Software](#technology--software)
@@ -77,10 +81,13 @@ Another could be a Level 2 metric such as the retention of a region or segment o
 
 ![Example of pyramid](images/examplePyramid.png)
 
+*Image Credit: [Scaler](https://scaler.com)*
+
 Here is an example of L1 metrics from multiple domains (Financial Services, SaaS, Retail, Media)
 
 ![Example of pyramid](images/exampleCrosstab.png)
 
+*Image Credit: [Scaler](https://scaler.com)*
 
 ## Overview of the Tool in this repository
 
