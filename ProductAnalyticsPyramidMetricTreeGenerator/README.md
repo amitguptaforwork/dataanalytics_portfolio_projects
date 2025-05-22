@@ -221,6 +221,20 @@ saas_kpis = {
     ]
 }
 ```
+```mermaid
+graph TD
+    A["COMPANY<br/>Weekly active subscribers (WAS)"] --> B["Owner<br/>KPI"]
+    A --> C["Marketing<br/>REACH"]
+    C --> C1["Subscribers"]
+    C1 --> C2["Retained"]
+    C1 --> C3["Reactivated"]
+    C1 --> C4["New"]
+    A --> D["Growth<br/>ACTIVATION"]
+    D --> D1["Subscription in 7 days / New users"]
+    D1 --> D2["Time to subscription"]
+
+```
+
 
 ### Example 2: E-commerce KPIs
 
@@ -262,6 +276,19 @@ ecommerce_kpis = {
     ]
 }
 ```
+```mermaid
+graph TD
+    A["COMPANY<br/>Weekly active subscribers (WAS)"] --> B["Owner<br/>KPI"]
+    A --> C["Marketing<br/>REACH"]
+    C --> C1["Subscribers"]
+    C1 --> C2["Retained"]
+    C1 --> C3["Reactivated"]
+    C1 --> C4["New"]
+    A --> D["Growth<br/>ACTIVATION"]
+    D --> D1["Subscription in 7 days / New users"]
+    D1 --> D2["Time to subscription"]
+
+```
 
 ## Customization
 
@@ -282,7 +309,7 @@ generator.colors = {
 
 The Mermaid output includes CSS classes that can be customized:
 
-```mermaid
+```python
 classDef topKPI fill:#2E86AB,stroke:#333,color:#fff
 classDef team fill:#A23B72,stroke:#333,color:#fff
 classDef action fill:#C73E1D,stroke:#333,color:#fff
@@ -299,12 +326,27 @@ The matplotlib version generates a hierarchical diagram with:
 - **Connecting Lines**: Gray lines showing relationships
 - **Level Labels**: Left-side labels indicating hierarchy levels
 
+![Matplotlib](my_kpi_tree.png)
+
 ### Mermaid Output
 The Mermaid version creates a flowchart with:
 - **Clean Node Structure**: Rectangular nodes with clear hierarchy
 - **Icon Integration**: Emojis to distinguish different types of metrics
 - **Color Coding**: Different colors for different organizational levels
 - **Professional Layout**: Automatic positioning and connection routing
+
+```mermaid
+graph TD
+    A["COMPANY<br/>Weekly active subscribers (WAS)"] --> B["Owner<br/>KPI"]
+    A --> C["Marketing<br/>REACH"]
+    C --> C1["Subscribers"]
+    C1 --> C2["Retained"]
+    C1 --> C3["Reactivated"]
+    C1 --> C4["New"]
+    A --> D["Growth<br/>ACTIVATION"]
+    D --> D1["Subscription in 7 days / New users"]
+    D1 --> D2["Time to subscription"]
+```  
 
 ## Advanced Features
 
