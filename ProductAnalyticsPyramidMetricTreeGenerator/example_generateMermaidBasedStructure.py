@@ -60,7 +60,7 @@ saas_kpis = {
         }
     ]
 }
-
+mermaid_code = generate_mermaid_diagram(saas_kpis)
 # Save to file
 with open('saas_kpi_tree.mmd', 'w') as f:
     f.write(mermaid_code)
@@ -105,7 +105,7 @@ ecommerce_kpis = {
     ]
 }
 
-
+mermaid_code = generate_mermaid_diagram(ecommerce_kpis)
 # Save to file
 with open('ecom_kpi_tree.mmd', 'w') as f:
     f.write(mermaid_code)

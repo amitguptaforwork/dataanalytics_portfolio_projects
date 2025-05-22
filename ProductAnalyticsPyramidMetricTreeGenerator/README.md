@@ -310,15 +310,19 @@ saas_kpis = {
 ```
 ```mermaid
 graph TD
-    A["COMPANY<br/>Weekly active subscribers (WAS)"] --> B["Owner<br/>KPI"]
-    A --> C["Marketing<br/>REACH"]
-    C --> C1["Subscribers"]
-    C1 --> C2["Retained"]
-    C1 --> C3["Reactivated"]
-    C1 --> C4["New"]
-    A --> D["Growth<br/>ACTIVATION"]
-    D --> D1["Subscription in 7 days / New users"]
-    D1 --> D2["Time to subscription"]
+    A["ARR GROWTH<br/>Annual Recurring Revenue"] --> B["Owner<br/>KPI"]
+    A --> C["Sales<br/>NEW BUSINESS"]
+    C --> C1["New customer ARR"]
+    C1 --> C2["Enterprise"]
+    C1 --> C3["SMB"]
+    A --> D["Customer Success<br/>EXPANSION"]
+    D --> D1["Expansion rate %"]
+    D1 --> D2["Upsells"]
+    D1 --> D3["Cross-sells"]
+    A --> E["Product<br/>RETENTION"]
+    E --> E1["Net revenue retention"]
+    E1 --> E2["Churn reduction"]
+
 
 ```
 
@@ -365,15 +369,20 @@ ecommerce_kpis = {
 ```
 ```mermaid
 graph TD
-    A["COMPANY<br/>Weekly active subscribers (WAS)"] --> B["Owner<br/>KPI"]
-    A --> C["Marketing<br/>REACH"]
-    C --> C1["Subscribers"]
-    C1 --> C2["Retained"]
-    C1 --> C3["Reactivated"]
-    C1 --> C4["New"]
-    A --> D["Growth<br/>ACTIVATION"]
-    D --> D1["Subscription in 7 days / New users"]
-    D1 --> D2["Time to subscription"]
+    A["REVENUE<br/>Monthly Gross Merchandise Value"] --> B["Owner<br/>KPI"]
+    A --> C["Marketing<br/>TRAFFIC"]
+    C --> C1["Unique visitors"]
+    C1 --> C2["SEO"]
+    C1 --> C3["Paid ads"]
+    C1 --> C4["Social"]
+    A --> D["Product<br/>CONVERSION"]
+    D --> D1["Conversion rate %"]
+    D1 --> D2["Cart abandonment"]
+    D1 --> D3["Checkout flow"]
+    A --> E["Merchandising<br/>AOV"]
+    E --> E1["Average order value"]
+    E1 --> E2["Recommendations"]
+    E1 --> E3["Bundles"]
 
 ```
 
