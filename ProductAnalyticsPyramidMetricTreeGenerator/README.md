@@ -13,7 +13,7 @@ They can evaluate architectural measures, quality measures, software complexity,
 
 In order to get their head around with so many possible metrics, companies usually categorise their metrics into a pyramidal or tree like structure
 
-![Product Metric Pyramid](pyramid.png)
+![Product Metric Pyramid](images/images/pyramid.png)
 
 ### Focus metric / North Star metric 
 
@@ -27,7 +27,7 @@ A North Star Metric (NSM) should be:
 - The answer to the following question: What is the one metric that best represents the desired outcome of your company?
 
 Which metric, if it were to increase today, would most accelerate my business’ flywheel?
-![North Star examples](northstar.png)
+![North Star examples](images/images/northstar.png)
 
 
 ### Level 1 metric / Primary metric
@@ -53,11 +53,11 @@ To take the retention example one step further, the Level 2 metric could be iOS 
 
 Another could be a Level 2 metric such as the retention of a region or segment of customers. 
 
-![Example of pyramid](examplePyramid.png)
+![Example of pyramid](images/examplePyramid.png)
 
 Here is an example of L1 metrics from multiple domains (Financial Services, SaaS, Retail, Media)
 
-![Example of pyramid](exampleCrosstab.png)
+![Example of pyramid](images/exampleCrosstab.png)
 
 
 ## Overview of the Tool in this repository
@@ -129,7 +129,7 @@ fig.savefig('my_kpi_tree.png', dpi=300, bbox_inches='tight')
 ```
 
 **Output**: A professionally styled diagram with colored boxes, connecting lines, and hierarchical layout. The matplotlib version produces publication-ready images suitable for presentations and reports.
-![Matplotlib](my_kpi_tree.png)
+![Matplotlib](images/my_kpi_tree.png)
 
 ### 2. Mermaid Approach
 
@@ -146,12 +146,12 @@ with open('kpi_tree.mmd', 'w') as f:
 ```
 
 **Output**: Clean Mermaid diagram code that can be:
-- Rendered online at [mermaid.live](https://mermaid.live)
+- Rendered online at [mermaid.live](images/https://mermaid.live)
 - Embedded in Markdown documentation
 - Used in GitLab/GitHub wikis
 - Converted to images using mermaid-cli
 
-![Mermaid output](mermaid_code_screenshot.png)
+![Mermaid output](images/mermaid_code_screenshot.png)
 
 After embedding in a readme.md file using ```mermaid tags, this code will render as below
 
@@ -384,7 +384,7 @@ The matplotlib version generates a hierarchical diagram with:
 - **Connecting Lines**: Gray lines showing relationships
 - **Level Labels**: Left-side labels indicating hierarchy levels
 
-![Matplotlib](my_kpi_tree.png)
+![Matplotlib](images/my_kpi_tree.png)
 
 ### Mermaid Output
 The Mermaid version creates a flowchart with:
