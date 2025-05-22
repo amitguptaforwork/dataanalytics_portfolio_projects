@@ -62,7 +62,7 @@ Here is an example of L1 metrics from multiple domains (Financial Services, SaaS
 
 ## Overview of the Tool in this repository
 
-This tool helps product analysts and business intelligence teams **create KPI breakdown trees programmtically** that show how top-level metrics cascade down through different organizational levels and teams. Perfect for creating consistent KPI documentation across multiple companies or business units.
+This tool helps product analysts and business intelligence teams **create KPI breakdown trees programmatically** that show how top-level metrics cascade down through different organizational levels and teams. Perfect for creating consistent KPI documentation across multiple companies or business units.
 
 ## Features
 
