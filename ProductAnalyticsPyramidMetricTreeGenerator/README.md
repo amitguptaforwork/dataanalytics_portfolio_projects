@@ -13,7 +13,7 @@ They can evaluate architectural measures, quality measures, software complexity,
 
 In order to get their head around with so many possible metrics, companies usually categorise their metrics into a pyramidal or tree like structure
 
-![Product Metric Pyramid](images/images/pyramid.png)
+![Product Metric Pyramid](images/pyramid.png)
 
 ### Focus metric / North Star metric 
 
@@ -27,7 +27,7 @@ A North Star Metric (NSM) should be:
 - The answer to the following question: What is the one metric that best represents the desired outcome of your company?
 
 Which metric, if it were to increase today, would most accelerate my business’ flywheel?
-![North Star examples](images/images/northstar.png)
+![North Star examples](images/northstar.png)
 
 
 ### Level 1 metric / Primary metric
