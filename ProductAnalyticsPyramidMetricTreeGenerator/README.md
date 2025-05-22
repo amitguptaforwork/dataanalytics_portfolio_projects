@@ -2,9 +2,67 @@
 
 A Python-based tool for programmatically generating hierarchical KPI (Key Performance Indicator) breakdown diagrams. This project supports both matplotlib-based static diagrams and Mermaid diagram generation for different use cases.
 
-## Overview
+## Overview - What are product metrics?
 
-This tool helps product analysts and business intelligence teams create visual KPI breakdown trees that show how top-level metrics cascade down through different organizational levels and teams. Perfect for creating consistent KPI documentation across multiple companies or business units.
+- Product metrics are quantifiable data points that a business tracks and analyzes to evaluate the success of its product. 
+- By using interactive product metrics, companies can optimize product strategies to ensure business growth.
+- Determining the right metrics to monitor and analyze leads to more intelligent decision-making throughout the product development process.
+- These metrics, sometimes called key performance indicators (KPIs), give the company quantifiable evidence about which aspects of the product / customer experience are resonating with customers, and which aren’t.
+- Product KPIs can be related to user requirements, size, quality, product growth, or user comfort. 
+They can evaluate architectural measures, quality measures, software complexity, or functional size.
+
+In order to get their head around with so many possible metrics, companies usually categorise their metrics into a pyramidal or tree like structure
+
+![Product Metric Pyramid](pyramid.png)
+
+### Focus metric / North Star metric 
+
+This is the single most important measure of success that matters a lot to a company. 
+
+A North Star Metric (NSM) should be:
+
+- A direct reflection of the company’s mission
+- An indicator of how a company brings value to its customers.
+- The only one of its kind. (Avoid having multiple NSMs as this tends to create complexity and confusion)
+- The answer to the following question: What is the one metric that best represents the desired outcome of your company?
+
+Which metric, if it were to increase today, would most accelerate my business’ flywheel?
+![North Star examples](northstar.png)
+
+
+### Level 1 metric / Primary metric
+
+Primary metrics depict the desired outcome of a particular product, team, or initiative. This is unlike the NSM, which represents the desired outcome of the company as a whole.
+
+Level 1 (L1) or primary metrics should either directly contribute to the focus metric or act as a check to make sure the product is growing in a healthy direction.
+
+The primary metric can be more valuable than the NSM in the short-term because of its narrower focus, tighter feedback loop and more immediate association with the specific product, team, or initiative in question.
+
+For example, if a product’s focus metric is Weekly active user, a good L1 metric would be 7-day retention to ensure you aren’t spending precious marketing funds to acquire new users who leave after a day or two.
+
+
+Supporting/ Tracking/ Input metric / Level 2 metric -
+
+Performance indicators which are set for the current initiatives that are most granular and mostly used for tracking the progress at lowest level. 
+
+For example - There may be some targeted marketing or segmented offers that need to be checked.
+
+Supporting metrics are indicators that the primary metric is moving in the right direction.
+
+To take the retention example one step further, the Level 2 metric could be iOS app retention.
+
+Another could be a Level 2 metric such as the retention of a region or segment of customers. 
+
+![Example of pyramid](examplePyramid.png)
+
+Here is an example of L1 metrics from multiple domains (Financial Services, SaaS, Retail, Media)
+
+![Example of pyramid](exampleCrosstab.png)
+
+
+## Overview of the Tool in this repository
+
+This tool helps product analysts and business intelligence teams **create KPI breakdown trees programmtically** that show how top-level metrics cascade down through different organizational levels and teams. Perfect for creating consistent KPI documentation across multiple companies or business units.
 
 ## Features
 
