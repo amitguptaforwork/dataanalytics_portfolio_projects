@@ -29,6 +29,25 @@ A North Star Metric (NSM) should be:
 Which metric, if it were to increase today, would most accelerate my business’ flywheel?
 ![North Star examples](images/northstar.png)
 
+## See 200+ Examples of North Star metrics across a variety of industries
+
+- [Technology & Software](#technology--software)
+- [Retail & E-Commerce](#retail--e-commerce)
+- [Finance & Banking](#finance--banking)
+- [Travel & Hospitality](#travel--hospitality)
+- [Healthcare & Wellness](#healthcare--wellness)
+- [Entertainment & Media](#entertainment--media)
+- [Education & Learning](#education--learning)
+- [Transportation & Logistics](#transportation--logistics)
+- [Food & Beverage](#food--beverage)
+- [Real Estate & Property](#real-estate--property)
+- [Consumer & Lifestyle](#consumer--lifestyle)
+- [Manufacturing & Industrial](#manufacturing--industrial)
+- [Sustainability & Environment](#sustainability--environment)
+- [Miscellaneous & Emerging Industries](#miscellaneous--emerging-industries)
+- [Social Impact & Nonprofits](#social-impact--nonprofits)
+
+
 
 ### Level 1 metric / Primary metric
 
