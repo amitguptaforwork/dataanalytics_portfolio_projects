@@ -2,14 +2,14 @@
 
 A Python-based tool for programmatically generating hierarchical KPI (Key Performance Indicator) breakdown diagrams. This project supports both matplotlib-based static diagrams and Mermaid diagram generation for different use cases.
 
-## Overview - What are product metrics?
+## Overview - What are KPIs or Product Metrics?
 
 - Product metrics are quantifiable data points that a business tracks and analyzes to evaluate the success of its product. 
-- By using interactive product metrics, companies can optimize product strategies to ensure business growth.
+- By using actionable product metrics, companies can optimize product strategies to ensure business growth.
 - Determining the right metrics to monitor and analyze leads to more intelligent decision-making throughout the product development process.
 - These metrics, sometimes called key performance indicators (KPIs), give the company quantifiable evidence about which aspects of the product / customer experience are resonating with customers, and which aren’t.
 - Product KPIs can be related to user requirements, size, quality, product growth, or user comfort. 
-They can evaluate architectural measures, quality measures, software complexity, or functional size.
+- They can evaluate architectural measures, quality measures, software complexity, or functional size.
 
 In order to get their head around with so many possible metrics, companies usually categorise their metrics into a pyramidal or tree like structure
 
@@ -488,7 +488,9 @@ fig.savefig('kpi_tree.svg', bbox_inches='tight')
 # Industry KPIs Reference Guide
 
 A comprehensive reference of Key Performance Indicators (KPIs) across various industries and business models. This guide provides top-level metrics that companies typically use to measure their success and can serve as input for KPI tree generation tools.
-
+<span style="color:orange">
+I have tried to give examples of one or two companies in the domain for easy identification and recall
+</span>
 ## Table of Contents
 
 - [Technology & Software](#technology--software)
@@ -511,276 +513,248 @@ A comprehensive reference of Key Performance Indicators (KPIs) across various in
 
 ## Technology & Software
 
-1. **Social Media Platform** – Daily Active Users (DAUs)
-2. **Search Engine** – Number of Searches Conducted
-3. **SaaS Subscription Business** – Monthly Recurring Revenue (MRR)
-4. **Cloud Computing Service** – Server Utilization Rate
-5. **E-commerce Platform** – Gross Merchandise Volume (GMV)
-6. **Cybersecurity Firm** – Number of Threats Blocked per Day
-7. **AI Research Company** – Successful Model Deployments
-8. **Web Hosting Provider** – Server Uptime %
-9. **Augmented Reality (AR) Platform** – AR Sessions per User
-10. **Virtual Reality (VR) Gaming** – Total Time Spent in VR
-11. **No-Code Development Platform** – Number of Apps Built
-12. **Mobile App Store** (Google Play, App Store) – App Downloads per User
-13. **Data Analytics SaaS** – Reports Generated per User
-14. **IT Consulting Firm** – Client Retention Rate
-15. **Software Testing Company** – Bugs Identified & Resolved
-
----
+1. **Social Media Platform** *<span style="color:orange">(Facebook, Twitter)</span>* – Daily Active Users (DAUs)
+2. **Search Engine** *<span style="color:orange">(Google, Bing)</span>* – Number of Searches Conducted
+3. **SaaS Subscription Business** *<span style="color:orange">(Salesforce, Zoom)</span>* – Monthly Recurring Revenue (MRR)
+4. **Cloud Computing Service** *<span style="color:orange">(AWS, Azure)</span>* – Server Utilization Rate
+5. **E-commerce Platform** *<span style="color:orange">(Shopify, Magento)</span>* – Gross Merchandise Volume (GMV)
+6. **Cybersecurity Firm** *<span style="color:orange">(CrowdStrike, Norton)</span>* – Number of Threats Blocked per Day
+7. **AI Research Company** *<span style="color:orange">(NVIDIA, DeepMind)</span>* – Successful Model Deployments
+8. **Web Hosting Provider** *<span style="color:orange">(Bluehost, HostGator)</span>* – Server Uptime %
+9. **Augmented Reality (AR) Platform** *<span style="color:orange">(Snapchat, Pokémon Go)</span>* – AR Sessions per User
+10. **Virtual Reality (VR) Gaming** *<span style="color:orange">(Oculus, Vive)</span>* – Total Time Spent in VR
+11. **No-Code Development Platform** *<span style="color:orange">(Bubble, Adalo)</span>* – Number of Apps Built
+12. **Mobile App Store** *<span style="color:orange">(Google Play, App Store)</span>* – App Downloads per User
+13. **Data Analytics SaaS** *<span style="color:orange">(Tableau, Power BI)</span>* – Reports Generated per User
+14. **IT Consulting Firm** *<span style="color:orange">(Accenture, Deloitte)</span>* – Client Retention Rate
+15. **Software Testing Company** *<span style="color:orange">(Applause, Testim)</span>* – Bugs Identified & Resolved
 
 ## Retail & E-Commerce
 
-1. **Online Marketplace** (Amazon, Flipkart) – Total Sales Volume (GMV)
-2. **Grocery Store** – Average Basket Size (Total Spend per Visit)
-3. **Luxury Brand** – Customer Lifetime Value (CLV)
-4. **Fashion Retailer** – Average Order Value (AOV)
-5. **Subscription Box Service** – Retention Rate
-6. **DTC (Direct-to-Consumer) Brand** – Repeat Purchases per Customer
-7. **Secondhand Marketplace** (eBay, Poshmark) – Transactions per Seller
-8. **Wholesale Distributor** – Average Order Value (AOV)
-9. **Boutique Clothing Store** – Customer Retention Rate
-10. **Handmade Goods Marketplace** (Etsy) – Total Artisan Sales
-11. **Furniture Retailer** – Delivery Timeliness
-12. **Consumer Electronics Store** – Product Upgrade Rate
-13. **Department Store Chain** – Foot Traffic per Store
-14. **Beauty & Skincare Brand** – Subscription Refill Rate
-15. **Jewelry Store** – Average Revenue per Sale
-
----
+1. **Online Marketplace** *<span style="color:orange">(Amazon, Flipkart)</span>* – Total Sales Volume (GMV)
+2. **Grocery Store** *<span style="color:orange">(Walmart, Kroger)</span>* – Average Basket Size (Total Spend per Visit)
+3. **Luxury Brand** *<span style="color:orange">(Gucci, Louis Vuitton)</span>* – Customer Lifetime Value (CLV)
+4. **Fashion Retailer** *<span style="color:orange">(Zara, H&M)</span>* – Average Order Value (AOV)
+5. **Subscription Box Service** *<span style="color:orange">(Birchbox, Dollar Shave Club)</span>* – Retention Rate
+6. **DTC (Direct-to-Consumer) Brand** *<span style="color:orange">(Warby Parker, Casper)</span>* – Repeat Purchases per Customer
+7. **Secondhand Marketplace** *<span style="color:orange">(eBay, Poshmark)</span>* – Transactions per Seller
+8. **Wholesale Distributor** *<span style="color:orange">(Sysco, McLane)</span>* – Average Order Value (AOV)
+9. **Boutique Clothing Store** *<span style="color:orange">(Anthropologie, Madewell)</span>* – Customer Retention Rate
+10. **Handmade Goods Marketplace** *<span style="color:orange">(Etsy)</span>* – Total Artisan Sales
+11. **Furniture Retailer** *<span style="color:orange">(IKEA, West Elm)</span>* – Delivery Timeliness
+12. **Consumer Electronics Store** *<span style="color:orange">(Best Buy, Apple)</span>* – Product Upgrade Rate
+13. **Department Store Chain** *<span style="color:orange">(Macy's, Nordstrom)</span>* – Foot Traffic per Store
+14. **Beauty & Skincare Brand** *<span style="color:orange">(Sephora, Glossier)</span>* – Subscription Refill Rate
+15. **Jewelry Store** *<span style="color:orange">(Tiffany & Co., Blue Nile)</span>* – Average Revenue per Sale
 
 ## Finance & Banking
 
-1. **Banking App** – Number of Active Accounts
-2. **Credit Card Company** – Transaction Volume per Customer
-3. **Investment Platform** – Assets Under Management (AUM)
-4. **Insurance Company** – Policy Renewal Rate
-5. **Fintech Startup** – Number of Transactions Processed
-6. **Crypto Exchange Platform** – Daily Trading Volume
-7. **Peer-to-Peer Lending Platform** – Loan Completion Rate
-8. **Microfinance Institution** – Loan Repayment Rate
-9. **Mobile Payment App** (PayPal, PhonePe) – Transactions per User
-10. **Stock Brokerage Firm** – Number of Trades per Customer
-11. **Digital Bank** – Active Monthly Users
-12. **Personal Finance App** – Budget Completion Rate
-13. **Corporate Lending Business** – Loan Conversion Rate
-14. **ATM Service Provider** – Successful Withdrawals per Machine
-15. **Fraud Prevention Company** – Fraud Cases Prevented
-
----
+1. **Banking App** *<span style="color:orange">(Chase, Bank of America)</span>* – Number of Active Accounts
+2. **Credit Card Company** *<span style="color:orange">(Visa, Mastercard)</span>* – Transaction Volume per Customer
+3. **Investment Platform** *<span style="color:orange">(Robinhood, Fidelity)</span>* – Assets Under Management (AUM)
+4. **Insurance Company** *<span style="color:orange">(State Farm, Allstate)</span>* – Policy Renewal Rate
+5. **Fintech Startup** *<span style="color:orange">(Stripe, Square)</span>* – Number of Transactions Processed
+6. **Crypto Exchange Platform** *<span style="color:orange">(Coinbase, Binance)</span>* – Daily Trading Volume
+7. **Peer-to-Peer Lending Platform** *<span style="color:orange">(Lending Club, Prosper)</span>* – Loan Completion Rate
+8. **Microfinance Institution** *<span style="color:orange">(Kiva, Grameen Bank)</span>* – Loan Repayment Rate
+9. **Mobile Payment App** *<span style="color:orange">(PayPal, PhonePe)</span>* – Transactions per User
+10. **Stock Brokerage Firm** *<span style="color:orange">(E*TRADE, TD Ameritrade)</span>* – Number of Trades per Customer
+11. **Digital Bank** *<span style="color:orange">(Chime, Monzo)</span>* – Active Monthly Users
+12. **Personal Finance App** *<span style="color:orange">(Mint, You Need a Budget)</span>* – Budget Completion Rate
+13. **Corporate Lending Business** *<span style="color:orange">(Goldman Sachs, JPMorgan)</span>* – Loan Conversion Rate
+14. **ATM Service Provider** *<span style="color:orange">(NCR, Diebold Nixdorf)</span>* – Successful Withdrawals per Machine
+15. **Fraud Prevention Company** *<span style="color:orange">(FICO, RSA Security)</span>* – Fraud Cases Prevented
 
 ## Travel & Hospitality
 
-1. **Online Travel Agency** (Expedia, MakeMyTrip) – Number of Booked Nights
-2. **Hotel Chain** – Revenue per Available Room (RevPAR)
-3. **Airline Company** – Load Factor (% of Seats Filled per Flight)
-4. **Car Rental Service** – Utilization Rate (Vehicles Rented per Day)
-5. **Vacation Rental Platform** (Airbnb) – Nights Booked per User
-6. **Luxury Hotel Chain** – Customer Satisfaction Score
-7. **Budget Hostel Service** – Occupancy Rate
-8. **Cruise Line** – Average Cruise Duration
-9. **Online Ticketing Platform** (RedBus, Booking.com) – Seats Sold per Trip
-10. **Business Travel Management Company** – Corporate Retention Rate
-11. **Glamping & Eco-Resorts** – Average Booking Duration
-12. **Railway Ticketing Platform** – Number of Train Seat Bookings
-13. **City Tour Agency** – Number of Tours Sold
-14. **Long-Term Stay Housing Platform** – Average Stay Length
-15. **Road Trip Rental Business** – Miles Driven per Customer
-
----
+1. **Online Travel Agency** *<span style="color:orange">(Expedia, MakeMyTrip)</span>* – Number of Booked Nights
+2. **Hotel Chain** *<span style="color:orange">(Marriott, Hilton)</span>* – Revenue per Available Room (RevPAR)
+3. **Airline Company** *<span style="color:orange">(American Airlines, Delta Air Lines)</span>* – Load Factor (% of Seats Filled per Flight)
+4. **Car Rental Service** *<span style="color:orange">(Hertz, Enterprise)</span>* – Utilization Rate (Vehicles Rented per Day)
+5. **Vacation Rental Platform** *<span style="color:orange">(Airbnb)</span>* – Nights Booked per User
+6. **Luxury Hotel Chain** *<span style="color:orange">(Four Seasons, Ritz-Carlton)</span>* – Customer Satisfaction Score
+7. **Budget Hostel Service** *<span style="color:orange">(Hostelworld, Meininger)</span>* – Occupancy Rate
+8. **Cruise Line** *<span style="color:orange">(Carnival, Royal Caribbean)</span>* – Average Cruise Duration
+9. **Online Ticketing Platform** *<span style="color:orange">(RedBus, Booking.com)</span>* – Seats Sold per Trip
+10. **Business Travel Management Company** *<span style="color:orange">(Concur, Egencia)</span>* – Corporate Retention Rate
+11. **Glamping & Eco-Resorts** *<span style="color:orange">(Glamping Hub, EcoRetreats)</span>* – Average Booking Duration
+12. **Railway Ticketing Platform** *<span style="color:orange">(Rail Europe, Trainline)</span>* – Number of Train Seat Bookings
+13. **City Tour Agency** *<span style="color:orange">(Gray Line, Viator)</span>* – Number of Tours Sold
+14. **Long-Term Stay Housing Platform** *<span style="color:orange">(Furnished Finder, Nestpick)</span>* – Average Stay Length
+15. **Road Trip Rental Business** *<span style="color:orange">(Enterprise, Zipcar)</span>* – Miles Driven per Customer
 
 ## Healthcare & Wellness
 
-1. **Pharmacy Chain** – Prescription Refill Rate
-2. **Health Insurance Provider** – Member Retention Rate
-3. **Hospital System** – Bed Occupancy Rate
-4. **Telemedicine Service** – Number of Consultations
-5. **Fitness App** – Monthly Active Users (MAU)
-6. **Mental Health Platform** – Sessions Completed per User
-7. **Diet & Nutrition Coaching Service** – Weight Loss Success Rate
-8. **Rehabilitation Center** – Patient Recovery Rate
-9. **Dental Clinic Chain** – Appointment Completion Rate
-10. **Health & Wellness Retreats** – Return Booking Rate
-11. **Wearable Health Tech** (Fitbit, Apple Watch) – Active User Engagement
-12. **Home Healthcare Provider** – Visits per Patient
-13. **Personal Trainer Business** – Workout Adherence Rate
-14. **Wellness Supplements Brand** – Subscription Retention Rate
-15. **Hearing Aid & Vision Correction Services** – Product Adoption Rate
-
----
+1. **Pharmacy Chain** *<span style="color:orange">(CVS, Walgreens)</span>* – Prescription Refill Rate
+2. **Health Insurance Provider** *<span style="color:orange">(UnitedHealthcare, Anthem)</span>* – Member Retention Rate
+3. **Hospital System** *<span style="color:orange">(Mayo Clinic, Cleveland Clinic)</span>* – Bed Occupancy Rate
+4. **Telemedicine Service** *<span style="color:orange">(Teladoc, Amwell)</span>* – Number of Consultations
+5. **Fitness App** *<span style="color:orange">(MyFitnessPal, Fitbit Coach)</span>* – Monthly Active Users (MAU)
+6. **Mental Health Platform** *<span style="color:orange">(BetterHelp, Talkspace)</span>* – Sessions Completed per User
+7. **Diet & Nutrition Coaching Service** *<span style="color:orange">(Noom, Weight Watchers)</span>* – Weight Loss Success Rate
+8. **Rehabilitation Center** *<span style="color:orange">(Sierra Tucson, RehabCare)</span>* – Patient Recovery Rate
+9. **Dental Clinic Chain** *<span style="color:orange">(SmileDirectClub, Aspen Dental)</span>* – Appointment Completion Rate
+10. **Health & Wellness Retreats** *<span style="color:orange">(Cal-a-Vie, Miraval)</span>* – Return Booking Rate
+11. **Wearable Health Tech** *<span style="color:orange">(Fitbit, Apple Watch)</span>* – Active User Engagement
+12. **Home Healthcare Provider** *<span style="color:orange">(Amedisys, LHC Group)</span>* – Visits per Patient
+13. **Personal Trainer Business** *<span style="color:orange">(24 Hour Fitness, F45 Training)</span>* – Workout Adherence Rate
+14. **Wellness Supplements Brand** *<span style="color:orange">(GNC, Ritual)</span>* – Subscription Retention Rate
+15. **Hearing Aid & Vision Correction Services** *<span style="color:orange">(Audicus, LASIK MD)</span>* – Product Adoption Rate
 
 ## Entertainment & Media
 
-1. **Streaming Service** (Netflix, Spotify) – Hours of Content Consumed
-2. **Gaming Platform** – Monthly Active Players (MAP)
-3. **News Website** – Time Spent per Session
-4. **Podcast Platform** – Total Listening Hours
-5. **Movie Theatre Chain** – Seats Sold per Screening
-6. **TV Network** – Total Hours Watched per Viewer
-7. **Live Streaming Platform** (Twitch, YouTube Live) – Average Watch Time per Stream
-8. **Film Production Studio** – Box Office Revenue per Release
-9. **Live Concert Business** – Ticket Sales per Event
-10. **Online Magazine Subscription** – Reader Retention Rate
-11. **Ad-Supported News Website** – Click-Through Rate on Ads
-12. **Book Publishing Company** – Book Sales per Author
-13. **Comic Book Platform** – Chapters Read per User
-14. **Music Record Label** – Streaming Royalties per Artist
-15. **Esports Organization** – Viewership per Tournament
-
----
+1. **Streaming Service** *<span style="color:orange">(Netflix, Spotify)</span>* – Hours of Content Consumed
+2. **Gaming Platform** *<span style="color:orange">(Steam, Xbox)</span>* – Monthly Active Players (MAP)
+3. **News Website** *<span style="color:orange">(CNN, Fox News)</span>* – Time Spent per Session
+4. **Podcast Platform** *<span style="color:orange">(Apple Podcasts, Spotify)</span>* – Total Listening Hours
+5. **Movie Theatre Chain** *<span style="color:orange">(AMC, Regal)</span>* – Seats Sold per Screening
+6. **TV Network** *<span style="color:orange">(NBC, ABC)</span>* – Total Hours Watched per Viewer
+7. **Live Streaming Platform** *<span style="color:orange">(Twitch, YouTube Live)</span>* – Average Watch Time per Stream
+8. **Film Production Studio** *<span style="color:orange">(Warner Bros., Universal)</span>* – Box Office Revenue per Release
+9. **Live Concert Business** *<span style="color:orange">(Live Nation, AEG)</span>* – Ticket Sales per Event
+10. **Online Magazine Subscription** *<span style="color:orange">(The New York Times, Forbes)</span>* – Reader Retention Rate
+11. **Ad-Supported News Website** *<span style="color:orange">(HuffPost, BuzzFeed)</span>* – Click-Through Rate on Ads
+12. **Book Publishing Company** *<span style="color:orange">(Penguin Random House, Hachette)</span>* – Book Sales per Author
+13. **Comic Book Platform** *<span style="color:orange">(Comixology, Marvel Unlimited)</span>* – Chapters Read per User
+14. **Music Record Label** *<span style="color:orange">(Universal Music, Sony Music)</span>* – Streaming Royalties per Artist
+15. **Esports Organization** *<span style="color:orange">(ESL, Overwatch League)</span>* – Viewership per Tournament
 
 ## Education & Learning
 
-1. **Online Learning Platform** (Coursera, Udemy) – Course Completion Rate
-2. **University** – Student Graduation Rate
-3. **Language Learning App** – Daily Active Learners
-4. **Tutoring Service** – Student Retention Rate
-5. **Corporate Training Business** – Engagement Rate (Lessons Completed)
-6. **Private Tutoring Business** – Student Success Rate
-7. **Online Certification Provider** – Certifications Earned per User
-8. **K-12 Learning App** – Homework Completion Rate
-9. **Skill-Based Training Platform** – Lessons Completed per User
-10. **Test Preparation Company** – Exam Score Improvement Rate
-11. **Coding Bootcamp** – Job Placement Rate
-12. **University Alumni Organization** – Alumni Engagement Index
-13. **EdTech SaaS** (School Management Software) – Adoption Rate by Institutions
-14. **Corporate Learning Platform** – Employee Course Completion Rate
-15. **Student Loan Refinancing Service** – Loan Repayment Success
-
----
+1. **Online Learning Platform** *<span style="color:orange">(Coursera, Udemy)</span>* – Course Completion Rate
+2. **University** *<span style="color:orange">(Harvard, Stanford)</span>* – Student Graduation Rate
+3. **Language Learning App** *<span style="color:orange">(Duolingo, Babbel)</span>* – Daily Active Learners
+4. **Tutoring Service** *<span style="color:orange">(Chegg, Varsity Tutors)</span>* – Student Retention Rate
+5. **Corporate Training Business** *<span style="color:orange">(LinkedIn Learning, Skillsoft)</span>* – Engagement Rate (Lessons Completed)
+6. **Private Tutoring Business** *<span style="color:orange">(Wyzant, TutorMe)</span>* – Student Success Rate
+7. **Online Certification Provider** *<span style="color:orange">(CertNexus, CompTIA)</span>* – Certifications Earned per User
+8. **K-12 Learning App** *<span style="color:orange">(Khan Academy, DreamBox)</span>* – Homework Completion Rate
+9. **Skill-Based Training Platform** *<span style="color:orange">(Pluralsight, Udacity)</span>* – Lessons Completed per User
+10. **Test Preparation Company** *<span style="color:orange">(Kaplan, Magoosh)</span>* – Exam Score Improvement Rate
+11. **Coding Bootcamp** *<span style="color:orange">(General Assembly, App Academy)</span>* – Job Placement Rate
+12. **University Alumni Organization** *<span style="color:orange">(Harvard Alumni, Stanford Alumni)</span>* – Alumni Engagement Index
+13. **EdTech SaaS** *<span style="color:orange">(Schoology, PowerSchool)</span>* – Adoption Rate by Institutions
+14. **Corporate Learning Platform** *<span style="color:orange">(Cornerstone, SAP Litmos)</span>* – Employee Course Completion Rate
+15. **Student Loan Refinancing Service** *<span style="color:orange">(SoFi, CommonBond)</span>* – Loan Repayment Success
 
 ## Transportation & Logistics
 
-1. **Rideshare App** (Uber, Ola) – Completed Rides per Driver
-2. **Public Transit System** – Passenger Utilization Rate
-3. **Freight & Logistics Company** – On-time Delivery Rate
-4. **Courier Delivery Service** – Parcels Delivered per Day
-5. **Electric Scooter Rental** – Number of Rides per Vehicle per Day
-6. **Bike-Sharing Service** – Daily Active Riders
+1. **Rideshare App** *<span style="color:orange">(Uber, Ola)</span>* – Completed Rides per Driver
+2. **Public Transit System** *<span style="color:orange">(MTA, LA Metro)</span>* – Passenger Utilization Rate
+3. **Freight & Logistics Company** *<span style="color:orange">(UPS, FedEx)</span>* – On-time Delivery Rate
+4. **Courier Delivery Service** *<span style="color:orange">(DHL, USPS)</span>* – Parcels Delivered per Day
+5. **Electric Scooter Rental** *<span style="color:orange">(Lime, Bird)</span>* – Number of Rides per Vehicle per Day
+6. **Bike-Sharing Service** *<span style="color:orange">(Citi Bike, Mobike)</span>* – Daily Active Riders
 7. **Hyperloop/High-Speed Rail Project** – Passenger Throughput
-8. **Airport Management Company** – Passenger Satisfaction Score
-9. **Shipping Container Business** – Cargo Utilization Rate
-10. **Truck Fleet Logistics Service** – Fuel Efficiency per Mile
-11. **Drone Delivery Service** – Successful Deliveries per Route
-12. **Rental Car Subscription Business** – Fleet Utilization per City
-13. **EV Charging Station Network** – Charging Sessions per Station
-14. **Luxury Chauffeur Service** – Ride Completion Rate
-15. **Long-Distance Bus Operator** – Seat Occupancy Rate
-
----
+8. **Airport Management Company** *<span style="color:orange">(LAX, Heathrow)</span>* – Passenger Satisfaction Score
+9. **Shipping Container Business** *<span style="color:orange">(Maersk, Evergreen)</span>* – Cargo Utilization Rate
+10. **Truck Fleet Logistics Service** *<span style="color:orange">(Swift Transportation, Schneider)</span>* – Fuel Efficiency per Mile
+11. **Drone Delivery Service** *<span style="color:orange">(Wing, Amazon Prime Air)</span>* – Successful Deliveries per Route
+12. **Rental Car Subscription Business** *<span style="color:orange">(Zipcar, Car2Go)</span>* – Fleet Utilization per City
+13. **EV Charging Station Network** *<span style="color:orange">(ChargePoint, Electrify America)</span>* – Charging Sessions per Station
+14. **Luxury Chauffeur Service** *<span style="color:orange">(Blacklane, Uber Black)</span>* – Ride Completion Rate
+15. **Long-Distance Bus Operator** *<span style="color:orange">(Greyhound, Megabus)</span>* – Seat Occupancy Rate
 
 ## Food & Beverage
 
-1. **Restaurant Chain** – Revenue per Table Turn
-2. **Coffee Shop** – Average Ticket Size (Spend per Customer)
-3. **Meal Kit Subscription** – Subscription Retention Rate
-4. **Food Delivery App** – Orders per Active User
-5. **Fast Food Franchise** – Repeat Customer Visits per Month
-6. **Organic Food Retailer** – Returning Customer Rate
-7. **Farm-to-Table Restaurant** – Customer Satisfaction Score
-8. **Online Recipe Platform** – Recipe Completion Rate
-9. **Meal Planning App** – Ingredients Purchased per Plan
-10. **Food Processing Company** – Supply Chain Efficiency Score
-11. **Craft Brewery** – Taproom Foot Traffic per Month
-12. **Alcohol Subscription Service** – Retention Rate of Members
-13. **Convenience Store Chain** – Basket Size Growth
-14. **Frozen Food Brand** – Total SKUs Sold per Month
-15. **Snack Subscription Box** – Engagement Rate
-
----
+1. **Restaurant Chain** *<span style="color:orange">(McDonald's, Chipotle)</span>* – Revenue per Table Turn
+2. **Coffee Shop** *<span style="color:orange">(Starbucks, Dunkin')</span>* – Average Ticket Size (Spend per Customer)
+3. **Meal Kit Subscription** *<span style="color:orange">(Blue Apron, HelloFresh)</span>* – Subscription Retention Rate
+4. **Food Delivery App** *<span style="color:orange">(DoorDash, Uber Eats)</span>* – Orders per Active User
+5. **Fast Food Franchise** *<span style="color:orange">(Subway, KFC)</span>* – Repeat Customer Visits per Month
+6. **Organic Food Retailer** *<span style="color:orange">(Whole Foods, Thrive Market)</span>* – Returning Customer Rate
+7. **Farm-to-Table Restaurant** *<span style="color:orange">(Blue Hill, Chez Panisse)</span>* – Customer Satisfaction Score
+8. **Online Recipe Platform** *<span style="color:orange">(Allrecipes, Food Network)</span>* – Recipe Completion Rate
+9. **Meal Planning App** *<span style="color:orange">(Mealime, PlateJoy)</span>* – Ingredients Purchased per Plan
+10. **Food Processing Company** *<span style="color:orange">(Tyson Foods, Nestlé)</span>* – Supply Chain Efficiency Score
+11. **Craft Brewery** *<span style="color:orange">(Dogfish Head, Stone Brewing)</span>* – Taproom Foot Traffic per Month
+12. **Alcohol Subscription Service** *<span style="color:orange">(Winc, Flaviar)</span>* – Retention Rate of Members
+13. **Convenience Store Chain** *<span style="color:orange">(7-Eleven, Circle K)</span>* – Basket Size Growth
+14. **Frozen Food Brand** *<span style="color:orange">(Amy's Kitchen, Stouffer's)</span>* – Total SKUs Sold per Month
+15. **Snack Subscription Box** *<span style="color:orange">(Graze, NatureBox)</span>* – Engagement Rate
 
 ## Real Estate & Property
 
-1. **Real Estate Marketplace** – Property Listings Viewed per User
-2. **Property Management Firm** – Occupancy Rate
-3. **Co-Working Space** – Desk Utilization Rate
-4. **Home Rental Platform** – Monthly Rental Volume
-5. **Construction Firm** – Project Completion Rate
-6. **Commercial Property Management** – Occupancy Growth Rate
-7. **Smart Home Tech Provider** – Devices Activated per Household
-8. **Office Space Leasing Service** – Lease Renewal Rate
-9. **Affordable Housing Developer** – Units Sold per Year
-10. **Senior Living Community** – Resident Retention Rate
-11. **Vacation Property Investment** – Revenue per Rental Night
-12. **Real Estate Agent Marketplace** – Leads Converted per Agent
-13. **Student Housing Platform** – Average Rental Period per Tenant
-14. **Interior Design Consultancy** – Project Completion Satisfaction Rate
-15. **Home Improvement Service** – Repeat Customer Engagement
-
----
+1. **Real Estate Marketplace** *<span style="color:orange">(Zillow, Realtor.com)</span>* – Property Listings Viewed per User
+2. **Property Management Firm** *<span style="color:orange">(Greystar, AvalonBay)</span>* – Occupancy Rate
+3. **Co-Working Space** *<span style="color:orange">(WeWork, Regus)</span>* – Desk Utilization Rate
+4. **Home Rental Platform** *<span style="color:orange">(Apartments.com, Rent.com)</span>* – Monthly Rental Volume
+5. **Construction Firm** *<span style="color:orange">(Lennar, D.R. Horton)</span>* – Project Completion Rate
+6. **Commercial Property Management** *<span style="color:orange">(CBRE, Jones Lang LaSalle)</span>* – Occupancy Growth Rate
+7. **Smart Home Tech Provider** *<span style="color:orange">(Nest, Ring)</span>* – Devices Activated per Household
+8. **Office Space Leasing Service** *<span style="color:orange">(Knotel, Industrious)</span>* – Lease Renewal Rate
+9. **Affordable Housing Developer** *<span style="color:orange">(Habitat for Humanity, Related Companies)</span>* – Units Sold per Year
+10. **Senior Living Community** *<span style="color:orange">(Brookdale, Sunrise Senior Living)</span>* – Resident Retention Rate
+11. **Vacation Property Investment** *<span style="color:orange">(Vacasa, RedAwning)</span>* – Revenue per Rental Night
+12. **Real Estate Agent Marketplace** *<span style="color:orange">(Compass, Redfin)</span>* – Leads Converted per Agent
+13. **Student Housing Platform** *<span style="color:orange">(American Campus Communities, Campus Advantage)</span>* – Average Rental Period per Tenant
+14. **Interior Design Consultancy** *<span style="color:orange">(Havenly, Modsy)</span>* – Project Completion Satisfaction Rate
+15. **Home Improvement Service** *<span style="color:orange">(TaskRabbit, Angie's List)</span>* – Repeat Customer Engagement
 
 ## Consumer & Lifestyle
 
-1. **Luxury Car Dealership** – Repeat Customer Purchase Cycle
-2. **Premium Watch Brand** – Referral Rate per Buyer
-3. **Eyewear Subscription** – Glasses Renewed per Subscriber
-4. **Personal Finance Coaching Service** – Savings Growth Rate per User
-5. **Wedding Planning Service** – Vendor Satisfaction Score
-6. **Pet Insurance Company** – Policy Renewal Rate
-7. **Online Personal Styling Platform** – User Engagement per Session
-8. **Subscription-Based Laundry Service** – Monthly Utilization Rate
-9. **Gift Shopping & Registry Platform** – Order Conversion Rate
-10. **Custom Print-on-Demand Merchandise** – Total Items Sold
-
----
+1. **Luxury Car Dealership** *<span style="color:orange">(Ferrari, Lamborghini)</span>* – Repeat Customer Purchase Cycle
+2. **Premium Watch Brand** *<span style="color:orange">(Rolex, Patek Philippe)</span>* – Referral Rate per Buyer
+3. **Eyewear Subscription** *<span style="color:orange">(Warby Parker, Zenni Optical)</span>* – Glasses Renewed per Subscriber
+4. **Personal Finance Coaching Service** *<span style="color:orange">(YNAB, Ramit Sethi)</span>* – Savings Growth Rate per User
+5. **Wedding Planning Service** *<span style="color:orange">(The Knot, Zola)</span>* – Vendor Satisfaction Score
+6. **Pet Insurance Company** *<span style="color:orange">(Petplan, Trupanion)</span>* – Policy Renewal Rate
+7. **Online Personal Styling Platform** *<span style="color:orange">(Stitch Fix, Trunk Club)</span>* – User Engagement per Session
+8. **Subscription-Based Laundry Service** *<span style="color:orange">(Rinse, Washio)</span>* – Monthly Utilization Rate
+9. **Gift Shopping & Registry Platform** *<span style="color:orange">(Amazon Registry, Zola)</span>* – Order Conversion Rate
+10. **Custom Print-on-Demand Merchandise** *<span style="color:orange">(Printful, Gooten)</span>* – Total Items Sold
 
 ## Manufacturing & Industrial
 
-1. **Automobile Manufacturer** – Production Efficiency per Factory
-2. **Aerospace Equipment Supplier** – Parts Reliability Score
-3. **Heavy Machinery Producer** – Equipment Lifespan per Unit
-4. **Solar Panel Manufacturer** – Installed Capacity Growth Rate
-5. **Battery Tech Innovator** – Energy Density Efficiency Progress
-6. **Consumer Electronics Company** – Device Upgrade Retention Rate
-7. **Medical Equipment Manufacturer** – Compliance Certification Completion
-8. **Chemical Production Business** – Safety Compliance Score
-9. **Smart Factory Automation** – Reduction in Manual Labor Time
-10. **Textile Mill** – Fabric Production Output per Day
-
----
+1. **Automobile Manufacturer** *<span style="color:orange">(Toyota, Ford)</span>* – Production Efficiency per Factory
+2. **Aerospace Equipment Supplier** *<span style="color:orange">(Boeing, Airbus)</span>* – Parts Reliability Score
+3. **Heavy Machinery Producer** *<span style="color:orange">(Caterpillar, John Deere)</span>* – Equipment Lifespan per Unit
+4. **Solar Panel Manufacturer** *<span style="color:orange">(Tesla Solar, SunPower)</span>* – Installed Capacity Growth Rate
+5. **Battery Tech Innovator** *<span style="color:orange">(Tesla, Panasonic)</span>* – Energy Density Efficiency Progress
+6. **Consumer Electronics Company** *<span style="color:orange">(Samsung, LG)</span>* – Device Upgrade Retention Rate
+7. **Medical Equipment Manufacturer** *<span style="color:orange">(Medtronic, GE Healthcare)</span>* – Compliance Certification Completion
+8. **Chemical Production Business** *<span style="color:orange">(Dow Chemical, BASF)</span>* – Safety Compliance Score
+9. **Smart Factory Automation** *<span style="color:orange">(Siemens, Rockwell Automation)</span>* – Reduction in Manual Labor Time
+10. **Textile Mill** *<span style="color:orange">(Patagonia, Nike)</span>* – Fabric Production Output per Day
 
 ## Sustainability & Environment
 
-1. **Waste Recycling Service** – Tons of Waste Diverted from Landfills
-2. **Sustainable Fashion Brand** – Eco-Friendly Materials Usage Rate
-3. **Electric Vehicle Manufacturer** – EV Adoption Growth Rate
-4. **Green Energy Provider** (Solar/Wind) – Gigawatts of Clean Energy Produced
-5. **Carbon Offset Marketplace** – Verified CO2 Offset per Customer
-6. **Water Purification System Provider** – Households Served with Clean Water
-7. **Eco-Friendly Packaging Company** – Reduction in Plastic Waste per Unit
-8. **Smart Agriculture Business** – Yield Efficiency per Hectare
-9. **Ocean Cleanup Initiative** – Volume of Plastic Removed per Year
-10. **Renewable Energy Storage Company** – Battery Efficiency Improvement Rate
-
----
+1. **Waste Recycling Service** *<span style="color:orange">(Waste Management, Republic Services)</span>* – Tons of Waste Diverted from Landfills
+2. **Sustainable Fashion Brand** *<span style="color:orange">(Patagonia, Eileen Fisher)</span>* – Eco-Friendly Materials Usage Rate
+3. **Electric Vehicle Manufacturer** *<span style="color:orange">(Tesla, Rivian)</span>* – EV Adoption Growth Rate
+4. **Green Energy Provider (Solar/Wind)</span>** *<span style="color:orange">(NextEra Energy, Vestas)</span>* – Gigawatts of Clean Energy Produced
+5. **Carbon Offset Marketplace** *<span style="color:orange">(Terrapass, Cool Effect)</span>* – Verified CO2 Offset per Customer
+6. **Water Purification System Provider** *<span style="color:orange">(Aqua America, American Water)</span>* – Households Served with Clean Water
+7. **Eco-Friendly Packaging Company** *<span style="color:orange">(Ecovative, Novolex)</span>* – Reduction in Plastic Waste per Unit
+8. **Smart Agriculture Business** *<span style="color:orange">(John Deere, Climate Corporation)</span>* – Yield Efficiency per Hectare
+9. **Ocean Cleanup Initiative** *<span style="color:orange">(The Ocean Cleanup, 4ocean)</span>* – Volume of Plastic Removed per Year
+10. **Renewable Energy Storage Company** *<span style="color:orange">(Tesla Energy, Fluence)</span>* – Battery Efficiency Improvement Rate
 
 ## Miscellaneous & Emerging Industries
 
-1. **NFT Marketplace** – Volume of NFTs Traded per Week
-2. **Metaverse Real Estate Developer** – Virtual Land Sales Volume
-3. **AI Personal Assistant App** – User Satisfaction Score
-4. **Quantum Computing Startup** – Stable Qubit Retention Rate
-5. **Autonomous Robotics Manufacturer** – Operational Success per Deployment
-6. **Cryonics & Longevity Research** – Viability Rate of Human Preservation
-7. **Space Tourism Company** – Successful Flights per Year
-8. **Vertical Farming Business** – Yield per Vertical Acre
-9. **3D Printed Housing Firm** – Construction Time Reduction per Home
-10. **Blockchain-Based Identity Verification** – Fraud Prevention Success Rate
-
----
+1. **NFT Marketplace** *<span style="color:orange">(OpenSea, SuperRare)</span>* – Volume of NFTs Traded per Week
+2. **Metaverse Real Estate Developer** *<span style="color:orange">(Decentraland, The Sandbox)</span>* – Virtual Land Sales Volume
+3. **AI Personal Assistant App** *<span style="color:orange">(Siri, Alexa)</span>* – User Satisfaction Score
+4. **Quantum Computing Startup** *<span style="color:orange">(IBM Quantum, Google Quantum)</span>* – Stable Qubit Retention Rate
+5. **Autonomous Robotics Manufacturer** *<span style="color:orange">(Boston Dynamics, iRobot)</span>* – Operational Success per Deployment
+6. **Cryonics & Longevity Research** *<span style="color:orange">(Alcor, Cryonics Institute)</span>* – Viability Rate of Human Preservation
+7. **Space Tourism Company** *<span style="color:orange">(SpaceX, Blue Origin)</span>* – Successful Flights per Year
+8. **Vertical Farming Business** *<span style="color:orange">(AeroFarms, Plenty)</span>* – Yield per Vertical Acre
+9. **3D Printed Housing Firm** *<span style="color:orange">(ICON, Apis Cor)</span>* – Construction Time Reduction per Home
+10. **Blockchain-Based Identity Verification** *<span style="color:orange">(Civic, SelfKey)</span>* – Fraud Prevention Success Rate
 
 ## Social Impact & Nonprofits
 
-1. **Nonprofit Fundraising Platform** – Donation Growth Rate
-2. **Microfinance for Developing Countries** – Business Sustainability Rate
-3. **Online Charity Crowdfunding** – Donor Retention Rate
-4. **Educational Equality Foundation** – Number of Students Sponsored
-5. **Affordable Medicine Initiative** – Life-Saving Treatment Access Rate
-6. **Wildlife Conservation Organization** – Protected Species Population Growth
-7. **Disaster Relief Logistics Provider** – Aid Delivery Speed per Crisis
-8. **Diversity & Inclusion Consultancy** – Workplace Equity Score
-9. **Public Health Awareness Program** – Campaign Reach Metrics
-10. **Human Rights Advocacy Group** – Policy Change Effectiveness
+1. **Nonprofit Fundraising Platform** *<span style="color:orange">(GoFundMe, DonorsChoose)</span>* – Donation Growth Rate
+2. **Microfinance for Developing Countries** *<span style="color:orange">(Kiva, Grameen Bank)</span>* – Business Sustainability Rate
+3. **Online Charity Crowdfunding** *<span style="color:orange">(JustGiving, Fundrazr)</span>* – Donor Retention Rate
+4. **Educational Equality Foundation** *<span style="color:orange">(Teach for America, Room to Read)</span>* – Number of Students Sponsored
+5. **Affordable Medicine Initiative** *<span style="color:orange">(Doctors Without Borders, Partners in Health)</span>* – Life-Saving Treatment Access Rate
+6. **Wildlife Conservation Organization** *<span style="color:orange">(WWF, Conservation International)</span>* – Protected Species Population Growth
+7. **Disaster Relief Logistics Provider** *<span style="color:orange">(American Red Cross, Direct Relief)</span>* – Aid Delivery Speed per Crisis
+8. **Diversity & Inclusion Consultancy** *<span style="color:orange">(McKinsey Institute, Catalyst)</span>* – Workplace Equity Score
+9. **Public Health Awareness Program** *<span style="color:orange">(CDC Foundation, Gates Foundation)</span>* – Campaign Reach Metrics
+10. **Human Rights Advocacy Group** *<span style="color:orange">(Amnesty International, Human Rights Watch)</span>* – Policy Change Effectiveness
 
 ---
 
