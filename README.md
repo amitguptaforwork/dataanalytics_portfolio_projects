@@ -131,6 +131,7 @@ LoanTap, disrupting India's personal loan segment for millennials, needed AI-pow
 - ROC-AUC optimization achieving 0.88+ score
 - Feature importance analysis revealing debt-to-income ratio as primary predictor
 - Confusion matrix analysis with precision, recall, F1-score evaluation
+- Class imbalance handling with SMOTE
 
 **📈 Business Value:**
 Scalable, automated credit underwriting system enabling 5x faster loan approvals while maintaining risk thresholds and regulatory compliance.
@@ -152,11 +153,12 @@ Built a production-grade sentiment analysis system capable of processing massive
 - **Scalable architecture**: Linear complexity O(n) enabling deployment at enterprise scale
 
 **🔧 Technical Highlights:**
-- HashingVectorizer with 2^21 features for memory-efficient text vectorization
+- HashingVectorizer with 2^16 features for memory-efficient text vectorization
 - SGDClassifier with log loss for probabilistic sentiment classification
 - Streaming data pipeline processing documents in mini-batches
-- Custom tokenization with stemming and stop-word removal
-- Partial fit methodology for incremental learning
+- Class imbalance handling
+
+
 
 **📈 Business Value:**
 Deployed sentiment monitoring system providing real-time insights into customer opinions, enabling rapid response to negative feedback and product improvement cycles.
@@ -222,9 +224,8 @@ Product strategy framework enabling data-driven roadmap decisions, reducing wast
 **Languages & Core Tools:**
 - **Python 3.8+**: NumPy, Pandas, SciPy, StatsModels
 - **Machine Learning**: Scikit-learn, XGBoost, LightGBM, TensorFlow
-- **NLP**: NLTK, SpaCy, Gensim, Transformers
-- **Visualization**: Matplotlib, Seaborn, Plotly, Tableau
-- **Big Data**: Apache Spark, Dask for large-scale processing
+- **NLP**: NLTK, SpaCy, Transformers
+- **Visualization**: Matplotlib, Seaborn
 - **Databases**: SQL (PostgreSQL, MySQL), NoSQL (MongoDB)
 
 **Methodologies:**
@@ -251,7 +252,6 @@ Product strategy framework enabling data-driven roadmap decisions, reducing wast
 ✅ Model Evaluation (ROC-AUC, Precision-Recall, F1-Score)  
 ✅ Feature Engineering & Selection  
 ✅ Hyperparameter Tuning (GridSearchCV, RandomizedSearchCV)  
-✅ Model Interpretability (SHAP, LIME)
 
 ### Data Science Workflow
 ✅ End-to-End ML Pipeline Development  
@@ -275,7 +275,7 @@ Product strategy framework enabling data-driven roadmap decisions, reducing wast
 I'm always interested in discussing data science challenges, collaboration opportunities, or just connecting with fellow data enthusiasts!
 
 - **GitHub**: [@amitguptaforwork](https://github.com/amitguptaforwork)
-- **Portfolio**: [Data Analytics Portfolio](https://github.com/amitguptaforwork/dataanalytics_portfolio_projects)
+- **Full Portfolio Website**: [full Portfolio](https://amitguptaforwork.github.io/)
 - **LinkedIn**: [Connect with me](#) *(http://www.linkedin.com/in/amitguptaforwork/)*
 - **Email**: amitguptaforwork@gmail.com
 
