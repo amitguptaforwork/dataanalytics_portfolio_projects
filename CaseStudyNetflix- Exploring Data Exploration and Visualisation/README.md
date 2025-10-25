@@ -14,7 +14,7 @@ This analysis examines Netflix's content catalog to uncover patterns and insight
 
 As the data is vast and presents many ideas worthy of pursuing from a analysis point of view, I created a mindmap to guide what to explore so that I can prioritize that data analysis when doing EDA
 
-![Analysis Strategy](2.MindMapOfAnalysisOfRequirement.jpg)
+![Analysis Strategy](images/2.MindMapOfAnalysisOfRequirement.jpg)
 
 ## Dataset Description
 The analysis uses Netflix's content library dataset containing information about movies and TV shows available on the platform, including:
