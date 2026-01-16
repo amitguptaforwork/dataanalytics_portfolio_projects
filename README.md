@@ -219,6 +219,34 @@ Product strategy framework enabling data-driven roadmap decisions, reducing wast
 
 ---
 
+### 9. 🏭 Factory Production Planning – Profit Optimization with Linear & Mixed-Integer Programming
+
+**Turn constrained manufacturing resources into optimal production decisions using mathematical optimization**
+
+A small manufacturing plant producing standard and premium products needed to decide **daily production quantities** under tight **machine-hour and labor-shift constraints**, while accounting for **setup decisions** required to run the premium product line. This project formulates the problem as a **Linear and Mixed-Integer Optimization model** and solves it using **Gurobi**, enabling data-driven production planning instead of manual heuristics.
+
+**💡 Key Achievements:**
+
+* **Optimal production mix**: Identified profit-maximizing quantities for each product while respecting shared resource constraints
+* **Setup decision modeling**: Incorporated binary setup logic to determine when producing the premium product is operationally viable
+* **Bottleneck identification**: Revealed binding constraints that limit throughput, enabling targeted capacity planning
+* **Scenario comparison**: Demonstrated how LP vs MILP formulations lead to materially different, more realistic decisions
+
+**🔧 Technical Highlights:**
+
+* Linear and Mixed-Integer Linear Programming (LP & MILP) formulation
+* Binary decision variables with Big-M constraints for setup logic
+* Resource capacity modeling for machine time and labor hours
+* Gurobi Optimizer (Python API) with solution and constraint analysis
+* Feasible-region visualization for model interpretability
+
+**📈 Business Value:**
+Replaced intuition-based production planning with a transparent, optimal decision framework, improving resource utilization and ensuring profit-maximizing operational choices under real-world constraints.
+
+**[🔗 Explore Full Case Study →](./MILP_Production_Planning_Optimization_using_Gurobi_LinearProgramming/README.md)**
+
+---
+
 ## 🛠️ Technical Stack
 
 **Languages & Core Tools:**

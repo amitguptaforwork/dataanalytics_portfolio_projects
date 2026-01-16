@@ -87,6 +87,21 @@
     - [✅ Summary](#-summary-2)
   - [8. Recommended Configurations](#8-recommended-configurations)
   - [9. Summary Table](#9-summary-table)
+- [10. Production-Grade Deployment Architecture (AWS)](#10-production-grade-deployment-architecture-aws)
+  - [🧱 **High-Level Architecture**](#-high-level-architecture)
+  - [📦 **1. Data Storage \& Preprocessing**](#-1-data-storage--preprocessing)
+    - [**S3 Buckets**](#s3-buckets)
+    - [**Preprocessing with Lambda**](#preprocessing-with-lambda)
+  - [🧠 **2. Model Training Workflow (AWS SageMaker)**](#-2-model-training-workflow-aws-sagemaker)
+  - [🚚 **3. Deployment Options**](#-3-deployment-options)
+    - [**A. Real-Time Inference (SageMaker Endpoint)**](#a-real-time-inference-sagemaker-endpoint)
+    - [**B. Serverless Inference (Lambda + API Gateway)**](#b-serverless-inference-lambda--api-gateway)
+  - [🔄 **4. CI/CD Pipeline (GitHub + CodePipeline)**](#-4-cicd-pipeline-github--codepipeline)
+    - [**GitHub (Source Control)**](#github-source-control)
+    - [**AWS CodePipeline**](#aws-codepipeline)
+  - [📊 **5. Monitoring \& Logging (CloudWatch)**](#-5-monitoring--logging-cloudwatch)
+  - [🔁 **6. Automated Retraining (Optional)**](#-6-automated-retraining-optional)
+  - [✔️ Deployment Summary](#️-deployment-summary)
   - [10. At a Glance](#10-at-a-glance)
     - [⚡ Key Highlights](#-key-highlights)
     - [🚀 Takeaway](#-takeaway)
@@ -989,6 +1004,191 @@ Each setup balances **accuracy**, **speed**, and **memory usage** according to t
 | **Model Output** | Pickle file (`final_model.pkl`) | Serialized trained pipeline. | Ready for reuse during inference. |
 
 ---
+
+
+
+# 10. Production-Grade Deployment Architecture (AWS)
+
+The model was trained locally in Jupyter. 
+Later we deployed to production.  The following section details **how this project was deployed, scaled, and monitored** in production environment using the AWS ecosystem.
+
+---
+
+## 🧱 **High-Level Architecture**
+
+This sentiment analysis system was productionized using the following AWS services:
+
+* **Amazon S3** – storage for raw data, cleaned data, and model artifacts
+* **Amazon SageMaker** – model training, model registry, and real-time/batch inference
+* **AWS Lambda** – lightweight preprocessing + optional serverless inference
+* **Amazon API Gateway** – public API for prediction
+* **AWS CodePipeline + GitHub** – CI/CD for automated builds, tests, and deployments
+* **Amazon CloudWatch** – logging, monitoring, and automated alarms
+
+
+```mermaid
+flowchart TD
+
+    subgraph Data["Data Layer"]
+        A1["Raw Data<br/>(S3: project/raw)"]
+        A2["Cleaned Data<br/>(S3: project/clean)"]
+    end
+
+    subgraph Preprocess["Preprocessing"]
+        L1["AWS Lambda<br/>Validation + Cleaning"]
+    end
+
+    subgraph Training["Model Training Pipeline"]
+        S1["SageMaker Training Job<br/>HashingVectorizer + SGD"]
+        S2["Model Artifacts<br/>(S3: project/models)"]
+        S3["SageMaker Model Registry"]
+    end
+
+    subgraph Deploy["Deployment Options"]
+        D1["Real-Time Endpoint<br/>SageMaker Endpoint"]
+        D2["Serverless Inference<br/>Lambda + API Gateway"]
+    end
+
+    subgraph CICD["CI/CD Pipeline"]
+        G1["GitHub Repo"]
+        C1["CodePipeline"]
+        C2["CodeBuild<br/>Tests + Packaging"]
+    end
+
+    subgraph Monitor["Monitoring and Logging"]
+        CW1["CloudWatch Metrics"]
+        CW2["CloudWatch Logs"]
+        CW3["Alarms / Notifications"]
+    end
+
+    %% Data Flow
+    A1 --> L1 --> A2
+    A2 --> S1
+    S1 --> S2 --> S3
+
+    %% CI/CD Flow
+    G1 --> C1 --> C2 --> S3
+
+    %% Deployment Flows
+    S3 -->|Deploy| D1
+    S3 -->|Deploy| D2
+
+    %% Monitoring
+    D1 --> CW1
+    D2 --> CW1
+    D1 --> CW2
+    D2 --> CW2
+    CW1 --> CW3
+```
+
+
+---
+
+## 📦 **1. Data Storage & Preprocessing**
+
+### **S3 Buckets**
+
+* `s3://project/raw/` – raw text datasets
+* `s3://project/clean/` – cleaned/validated data
+* `s3://project/models/` – model artifacts & versioned training outputs
+
+### **Preprocessing with Lambda**
+
+A Lambda function was created to automatically clean and validate incoming data before moving it into the training bucket.
+
+---
+
+## 🧠 **2. Model Training Workflow (AWS SageMaker)**
+
+1. Packaged the training script (`train.py`) with HashingVectorizer + SGD incremental learning
+2. Submitted a **SageMaker Training Job** configured with:
+
+   * CPU instance (e.g., `ml.m5.large`)
+   * S3 data input channels
+   * Automatic checkpointing
+3. Saved the trained model to the SageMaker Model Registry
+4. Assigned an approved version (ex: `sentiment-classifier-v1`) for deployment
+
+This architecture enabled large-scale training, retraining, and reproducibility.
+
+---
+
+## 🚚 **3. Deployment Options**
+
+We went for Option A.  Option B was just for exploration
+
+### **A. Real-Time Inference (SageMaker Endpoint)**
+
+* Deployed the model as a **SageMaker Endpoint**
+* Autoscaling based on traffic
+* Low latency REST API
+
+### **B. Serverless Inference (Lambda + API Gateway)**
+
+For lower traffic or cost-sensitive deployments:
+
+* Model + vectorizer loaded inside a Lambda function
+* Exposed via API Gateway `/predict` route
+* Scales to zero when idle
+
+---
+
+## 🔄 **4. CI/CD Pipeline (GitHub + CodePipeline)**
+
+We used:
+
+### **GitHub (Source Control)**
+
+* All training, evaluation, and deployment code versioned here
+
+### **AWS CodePipeline**
+
+Triggered automatically on every push to `main`:
+
+1. **CodeBuild** runs tests + linters
+2. If successful, package training and inference scripts
+3. Register a new model version in SageMaker
+4. Deploy the updated model endpoint (blue/green rollout)
+
+This ensured safe + automated deployment of model updates.
+
+---
+
+## 📊 **5. Monitoring & Logging (CloudWatch)**
+
+For monitoring we setup the following:
+
+* **CloudWatch Metrics** for prediction latency, invocations, and error rates
+* **CloudWatch Logs** from Lambda or SageMaker endpoints
+* **Automated Alarms** for high error rate, slow responses, or scaling issues
+
+This created a good feedback loop for maintenance and debugging.
+
+---
+
+## 🔁 **6. Automated Retraining (Optional)**
+
+To keep the model accurate over time:
+
+* We can upload new data → triggers Lambda
+* Lambda starts a SageMaker training job
+* New model validated + auto-deployed via CodePipeline if it passes thresholds
+
+---
+
+## ✔️ Deployment Summary
+
+This project was fully productionized using AWS services for:
+
+* **Storage:** S3
+* **Training:** SageMaker
+* **Serving:** SageMaker Endpoints or Lambda
+* **API Layer:** API Gateway
+* **CI/CD:** CodePipeline + GitHub
+* **Monitoring:** CloudWatch
+
+
+
 
 ## 10. At a Glance
 
