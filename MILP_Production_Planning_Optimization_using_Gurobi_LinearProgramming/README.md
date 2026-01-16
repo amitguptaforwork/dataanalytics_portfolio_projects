@@ -1,17 +1,3 @@
-No worries at all — this is a **great request**, and this README will make your project look *real*, *thoughtful*, and *interview-ready*.
-
-Below is a **complete `README.md`** you can copy-paste directly into a GitHub repo.
-It includes:
-
-* Clear problem context
-* Math formulation
-* **Mermaid diagrams**
-* Gurobi code snippets
-* A **separate visualization script** you can run locally to generate plots
-
----
-
-````md
 # 🏭 Production Planning Optimization using Gurobi
 
 ## Overview
