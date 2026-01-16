@@ -13,6 +13,8 @@ Additionally, Product B requires a **setup decision**, meaning it can only be pr
 
 The goal is to **maximize daily profit** while respecting all operational constraints.
 
+![Solution Overview](images/infographic.png)
+
 ---
 
 ## Business Problem
@@ -22,6 +24,10 @@ Production managers must answer:
 - Which resource becomes the bottleneck?
 
 This project models and solves the problem using **Linear Programming (LP)** and **Mixed-Integer Linear Programming (MILP)**.
+
+### Why Linear Programming?
+
+Linear Programming (LP) was chosen for this problem because the factory’s decision-making structure is inherently linear: each product consumes machine time and labor in fixed proportions, and total profit is a linear function of production quantities. LP is specifically designed for optimizing such problems where both the objective function and constraints can be expressed as linear relationships. This formulation guarantees a **globally optimal solution**, avoids local optima, and can be solved efficiently even as the problem scales. By extending the LP to a Mixed-Integer Linear Program (MILP) with binary setup variables, the model remains mathematically tractable while accurately capturing real-world operational decisions, making LP/MILP the most suitable and reliable approach for this production planning scenario.
 
 ---
 
@@ -34,35 +40,43 @@ This project models and solves the problem using **Linear Programming (LP)** and
 
 ---
 
-## Objective Function
+### Objective Function
+
 Maximize total profit:
 
-\[
-\text{Maximize } 3x_A + 5x_B
-\]
+$$
+3x_A + 5x_B
+$$
+
 
 ---
 
-## Constraints
-### Machine Capacity
-\[
+### Constraints
+
+**Machine Capacity**
+
+$$
 2x_A + x_B \le 10
-\]
+$$
 
-### Labor Capacity
-\[
+**Labor Capacity**
+
+$$
 x_A + 3x_B \le 12
-\]
+$$
 
-### Setup Logic (Big-M Constraint)
-\[
-x_B \le M \cdot z_B
-\]
+**Setup Logic (Big-M Constraint)**
 
-### Non-negativity
-\[
-x_A, x_B \ge 0
-\]
+$$
+x_B \le M z_B
+$$
+
+**Non-negativity**
+
+$$
+x_A \ge 0,\quad x_B \ge 0
+$$
+
 
 ---
 
