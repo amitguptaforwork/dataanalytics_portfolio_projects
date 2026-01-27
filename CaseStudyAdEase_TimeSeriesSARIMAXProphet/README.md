@@ -1,5 +1,5 @@
 
-<img src="images\infographic.png"
+<img src="images/infographic.png"
      alt="Infographic"
      width="450"
      style="float: left; margin: 0 20px 20px 0;" />
@@ -54,14 +54,14 @@ Before selecting the aggregated approach, I evaluated several other methodologie
 ### Data Segmentation Logic
 We identified that `access_origin` (Spider vs. Human) and `language` were the strongest drivers of variance. The data was segmented accordingly.
 
-![Data Segmentation Diagram](images\segmentation_diagram.png)
+![Data Segmentation Diagram](images/segmentation_diagram.png)
 *Figure 1: Logic used to segment the 145k pages into clusters for modeling.*
 
 ### Modeling Pipeline
 The pipeline ingests raw daily data, splits it into the identified segments, and applies the specific forecasting model (SARIMAX or Prophet) best suited for that segment's characteristics.
 
 <p align="center">
-  <img src="images\pipeline_flow.png" alt="Modeling Pipeline" />
+  <img src="images/pipeline_flow.png" alt="Modeling Pipeline" />
 </p>
 
 *Figure 2: End-to-end pipeline: Input Data -> Split by Segment -> Train/Test -> Forecast.*
@@ -71,7 +71,7 @@ The pipeline ingests raw daily data, splits it into the identified segments, and
 ## 4. Data Summary
 **Total Data:** 145,063 Rows (Pages) x 550 Columns.
 **History:** Daily page views from 2015-07-01 to 2016-12-31.
-![Sample Data](images\sample_data.png)
+![Sample Data](images/sample_data.png)
 *Figure: Sample data.*
 
 | Feature | Details | Importance |
@@ -100,7 +100,7 @@ We compared **SARIMAX**, **Prophet**, and **SARIMA** against a baseline. The agg
 | **Commons (Media)** | Prophet | 13.9% | 0.8 |
 | **WWW (Main)** | Prophet | 15.1% | **63.5** |
 
-![Sample Data](images\FinalTable.png)
+![Sample Data](images/FinalTable.png)
 
 
 
@@ -130,19 +130,19 @@ Let me take you to a deep dive journey of how this case study was done.
 ### EDA
 1. We split the first column into multiple columns - page title, domain, access_type, access_origin and language
 2. We realized that modeling on per page basis is not feasible (we tried fitting models on single pages, later in the study and found that MAPE was obnoxious, around 89%.  
-   ![plotSinglePage](images\plotSinglePage.png)
+   ![plotSinglePage](images/plotSinglePage.png)
 3. That's when we circled back, and went in for the **aggregated approach** described earlier in this document. Data from all segments was added across pages, and considered ONE time series. (*As expected, EDA is a iterative exploratory step, and such back and forth are but expected.*)
    
 4. Performed univariate and bivariate analysis on aggregated data.  Important insights were 
    - Page access by spiders (bot) is quite different from normal access
-     ![spider Data](images\spider.png)
-     ![all agents Data](images\all_agents.png)
+     ![spider Data](images/spider.png)
+     ![all agents Data](images/all_agents.png)
    - So definitely this can be a segmentation criteria
    - Next we analysed page view data across languages. Here too we found variations.
      - EN pages are quite different compared to other languages.  There are dramatic ups and downs 
-     ![en Data](images\en.png)
+     ![en Data](images/en.png)
      - ZH pages are having much less spikes
-     ![zh Data](images\zh.png)
+     ![zh Data](images/zh.png)
      - Compared to langugage pages, www has almost NO spikes !  Even commons is also flattish
      - FR is flattish
      - Overall conclusion was that we should build different models for different languages.
@@ -150,12 +150,12 @@ Let me take you to a deep dive journey of how this case study was done.
    - As expected in a typical web based business ,there is a weekly cycle.  
    - Campaigns can have very significant (multifold) positive impact on page views.
    - We were provided exogeneous data about English pages.  Plotting the same revealed exogeneous variable does make sense.
-   - ![exogeneous Data](images\enexo.png)
+   - ![exogeneous Data](images/enexo.png)
    - We also explored using a embedding model to cluster page titles as the page name has useful info.
      - This study was done separately and **sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2** was used to embed (as the data contains multiple languages)
      - After that we ran HDBScan on it to auto identify clusters.
      - Following clusters were identified    
-     - ![hdbscan](images\hdbscan.png)   
+     - ![hdbscan](images/hdbscan.png)   
       - Next step is to use a LLM to identify titles for these clusters by passing it some of the pages in these clusters and asking it to give a nice representative cluster name..
      - This train of thought is not incorporated in current study due to time constraints.  Can be done in future.
 
@@ -164,7 +164,7 @@ Let me take you to a deep dive journey of how this case study was done.
 - Then we built a pipeline that could apply a algorithm on relevant segment
 - We checked for stationarity.  Found that some series were stationary, some were not. 
   
-  ![adf](images\adf.png) 
+  ![adf](images/adf.png) 
 - After making them stationary, we checked ACF PACF plots to identify appropriated parameter valeus for p,q,d
 - However we ultimately used grid search to find the best params.  
   ```python
@@ -402,9 +402,9 @@ r,b = gridSearchSARIMAXAllSegments(timeSeriesCombined_df=timeSeriesFull_df,
   ```
 - At this stage, our results for various segments were as follows
  
-  ![arima](images\arima.png)
+  ![arima](images/arima.png)
 - Next we identified seasonality length as 7 using multiple ways- PACF and plotting average weekl page hits 
-  ![seasonlity](images\seasonlity.png)
+  ![seasonlity](images/seasonlity.png)
 
 - Then we fitted SARIMA. Again a grid search was performed.
     ```python
@@ -441,9 +441,9 @@ r,b = gridSearchSARIMAXAllSegments(timeSeriesCombined_df=timeSeriesFull_df,
                                 verbose=False)
     ```
     - At this stage our best models (based on ARIMA and SARIMA were as follows)
-    ![sarima](images\sarima.png)
+    ![sarima](images/sarima.png)
 - Next, we did SARIMAX.  We had exogeneous data for en pages. We additionally created another exogeneous variable called weekend.  So for all languages except en, we had one exogeneous column, for en we had two !
-- ![enexo](images\enexo.png)
+- ![enexo](images/enexo.png)
 - As SARIMAX is the final model in this family of models, we expanded search space too
  ```python
  SARIMAX_SEARCH_SPACE = {
@@ -480,7 +480,7 @@ r,b = gridSearchSARIMAXAllSegments(timeSeriesCombined_df=timeSeriesFull_df,
  ```
 - At this stage, our results for various segments were as follows
  
-  ![sarimax](images\sarimax.png)
+  ![sarimax](images/sarimax.png)
 - Finally we fitted Prophet
   
  ```python
@@ -623,19 +623,19 @@ def fitProphetWithRegressors(prophet_df, exog_cols,
 )
 ```
 - And then we got our FINAL Models !
-  ![finalmodels](images\finalmodels.png)
+  ![finalmodels](images/finalmodels.png)
 - Here is a visual that brings out how our modelling MAPE improved as we used ARIMA -> SARIMA -> SARIMAX and Prophet
-  ![finalComparisons](images\finalComparisons.png)
+  ![finalComparisons](images/finalComparisons.png)
 - The models were saved in a pickle file.
 - We used the fitted models to predict on entire data to get a "feel" how they are performing. We plotted the confidence interval to show that while the models may have some error (MAPE between 4-15%), once we consider the confidence intervals while communicating with client, the models are performing awesome job.
 
-    ![Final Model Performances 3](images\FinalModelPerformances_3.png)
-    ![Final Model Performances 4](images\FinalModelPerformances_4.png)
-    ![Final Model Performances 5](images\FinalModelPerformances_5.png)
-    ![Final Model Performances 6](images\FinalModelPerformances_6.png)
-    ![Final Model Performances 7](images\FinalModelPerformances_7.png)
-    ![Final Model Performances 8](images\FinalModelPerformances_8.png)
-    ![Final Model Performances 9](images\FinalModelPerformances_9.png)
-    ![Final Model Performances 10](images\FinalModelPerformances_10.png)
-    ![Final Model Performances 11](images\FinalModelPerformances_11.png)
+    ![Final Model Performances 3](images/FinalModelPerformances_3.png)
+    ![Final Model Performances 4](images/FinalModelPerformances_4.png)
+    ![Final Model Performances 5](images/FinalModelPerformances_5.png)
+    ![Final Model Performances 6](images/FinalModelPerformances_6.png)
+    ![Final Model Performances 7](images/FinalModelPerformances_7.png)
+    ![Final Model Performances 8](images/FinalModelPerformances_8.png)
+    ![Final Model Performances 9](images/FinalModelPerformances_9.png)
+    ![Final Model Performances 10](images/FinalModelPerformances_10.png)
+    ![Final Model Performances 11](images/FinalModelPerformances_11.png)
 
