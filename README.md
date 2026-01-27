@@ -13,7 +13,30 @@ Welcome to my comprehensive data analytics portfolio! This repository showcases 
 
 ## 📊 Featured Projects
 
-### 1. 🏋️ Aerofit Treadmill - Customer Profiling with Descriptive Statistics & Probability
+
+### Wikipedia Ad Traffic - Aggregated Time Series Forecasting
+**Optimizing Global Ad Placement through 145,000+ Page View Analysis**
+
+With **145,000+ unique pages** generating millions of daily interactions, advertisers needed a robust system to predict inventory availability across different languages and regions. This project moves beyond computationally expensive single-page forecasting to an **Aggregated Modeling Strategy**, grouping traffic by semantic segments to deliver precise, scalable predictions.
+
+**💡 Key Achievements:**
+*   **Scalable Architecture:** Reduced computational load by transforming **145,000 individual time series** into **10 high-signal segments**, smoothing out noise and handling sparse data effectively.
+*   **Bot vs. Human Precision:** Segmented "Spider" (bot) traffic from organic user traffic, leading to a massive **62.3% improvement** in forecast accuracy for server capacity planning.
+*   **Language-Specific Optimization:** Achieved **4.8% MAPE** on English pages (a **2.1pp improvement** over baseline) by deploying Prophet for high-volatility segments and SARIMAX for stable European languages.
+*   **Strategic Segmentation:** Identified that `Access_Origin` and `Language` are the primary drivers of variance, enabling advertisers to target specific high-value inventory.
+
+**🔧 Technical Highlights:**
+*   **Multi-Model Pipeline:** Implementation of **SARIMAX** (with exogenous variables) and **Facebook Prophet** based on segment volatility.
+*   **Statistical Validation:** Extensive EDA using Cramer’s V to determine dependencies between Domain, Access Type, and Language.
+*   **Aggregated Forecasting:** Methodology to sum daily pageviews at the segment level to overcome the "cold start" and "sparse data" problems of individual page forecasting.
+
+**📈 Business Value:**
+Enabled data-driven **PageView Forecasting** for server loads (via Spider forecasting) and accurate **Ad Inventory Estimation** (via Language forecasting), allowing for optimized budget allocation across global markets.
+
+**[🔗 Explore Full Case Study →](./CaseStudyAdEase_TimeSeriesSARIMAXProphet/README.md)**
+
+
+### 🏋️ Aerofit Treadmill - Customer Profiling with Descriptive Statistics & Probability
 
 **Transform customer data into revenue-driving insights through advanced statistical profiling**
 
@@ -38,7 +61,7 @@ Strategic insights that transformed customer acquisition costs by enabling preci
 
 ---
 
-### 2. 🛒 Walmart Black Friday - Confidence Intervals & Central Limit Theorem
+### 🛒 Walmart Black Friday - Confidence Intervals & Central Limit Theorem
 
 **Unlocking $500M+ spending patterns through rigorous statistical inference**
 
@@ -63,7 +86,7 @@ Data-driven segmentation strategies that optimized promotional budgets, personal
 
 ---
 
-### 3. 🚴 Yulu Bikes - Hypothesis Testing for Micro-Mobility Demand
+### 🚴 Yulu Bikes - Hypothesis Testing for Micro-Mobility Demand
 
 **Reversing revenue decline through statistical hypothesis testing—$2M+ impact potential**
 
@@ -88,7 +111,7 @@ Transformed operational strategy with weather-based forecasting, seasonal pricin
 
 ---
 
-### 4. 🎬 Netflix Content Strategy - Data Exploration & Visualization
+### 🎬 Netflix Content Strategy - Data Exploration & Visualization
 
 **Decoding 8,800+ shows to drive billion-dollar content investments**
 
@@ -113,7 +136,7 @@ Data-driven content acquisition roadmap saving $50M+ annually in content investm
 
 ---
 
-### 5. 💳 LoanTap - Loan Default Prediction with Logistic Regression
+### 💳 LoanTap - Loan Default Prediction with Logistic Regression
 
 **Reducing Non-Performing Assets through predictive creditworthiness modeling**
 
@@ -140,7 +163,7 @@ Scalable, automated credit underwriting system enabling 5x faster loan approvals
 
 ---
 
-### 6. 📚 Book Review Sentiment Analysis - NLP with HashingVectorizer & SGD
+### 📚 Book Review Sentiment Analysis - NLP with HashingVectorizer & SGD
 
 **Processing millions of reviews in real-time with scalable NLP architecture**
 
@@ -167,7 +190,7 @@ Deployed sentiment monitoring system providing real-time insights into customer 
 
 ---
 
-### 7. 📞 Customer Churn Prediction - Machine Learning for Telecom
+### 📞 Customer Churn Prediction - Machine Learning for Telecom
 
 **Preventing $10M+ annual revenue loss through predictive churn modeling**
 
@@ -193,7 +216,7 @@ Operational framework saving $10M+ annually through targeted retention offers, s
 
 ---
 
-### 8. 🎯 Product Analytics Pyramid - Metric Tree Generator
+### 🎯 Product Analytics Pyramid - Metric Tree Generator
 
 **Aligning cross-functional teams with hierarchical metrics framework**
 
@@ -219,7 +242,7 @@ Product strategy framework enabling data-driven roadmap decisions, reducing wast
 
 ---
 
-### 9. 🏭 Factory Production Planning – Profit Optimization with Linear & Mixed-Integer Programming
+### 🏭 Factory Production Planning – Profit Optimization with Linear & Mixed-Integer Programming
 
 **Turn constrained manufacturing resources into optimal production decisions using mathematical optimization**
 
