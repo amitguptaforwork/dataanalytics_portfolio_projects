@@ -100,7 +100,7 @@ We compared **SARIMAX**, **Prophet**, and **SARIMA** against a baseline. The agg
 | **Commons (Media)** | Prophet | 13.9% | 0.8 |
 | **WWW (Main)** | Prophet | 15.1% | **63.5** |
 
-![Sample Data](images/FinalTable.png)
+![Sample Data](images/finalTable.png)
 
 
 
@@ -119,7 +119,7 @@ We compared **SARIMAX**, **Prophet**, and **SARIMA** against a baseline. The agg
 1.  **Separate Bot Traffic:** Always filter `access_origin == 'spider'` when forecasting for ad placement, as bots do not monetize ads.
 2.  **Segment by Language:** Do not use a "one-size-fits-all" model. English and Spanish pages require different forecasting parameters (Prophet) compared to German or Chinese pages (SARIMAX).
 3.  **Capacity Planning:** Use the "Spider" model specifically for server load testing (capacity planning), as bots generate significant but unpredictable load.
-4.  
+
 
 ---
 
@@ -403,7 +403,7 @@ r,b = gridSearchSARIMAXAllSegments(timeSeriesCombined_df=timeSeriesFull_df,
 - At this stage, our results for various segments were as follows
  
   ![arima](images/arima.png)
-- Next we identified seasonality length as 7 using multiple ways- PACF and plotting average weekl page hits 
+- Next we identified seasonality length as 7 using multiple ways- PACF and plotting average weekly page hits 
   ![seasonlity](images/seasonlity.png)
 
 - Then we fitted SARIMA. Again a grid search was performed.
